@@ -1,24 +1,22 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <section class="home hero is-fullheight single">
+    <div class="hero-body">
+      <div class="container">
+        <h1>Bimata Prathama</h1>
+        <h2>Front End Developer</h2>
+        <div class="buttons">
+          <router-link to="/work" class="button btn-default">See Case Studies</router-link>
+        </div>
+      </div>
+    </div>
+  </section>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
 export default {
-  name: 'home',
-  components: {
-    HelloWorld
-  }
+  name: 'home'
 }
 </script>
 
 <style lang="scss">
-  .home {
-    text-align: center;
-  }
 </style>

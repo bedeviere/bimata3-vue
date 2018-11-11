@@ -1,7 +1,9 @@
 <template>
-  <div class="about">
-    <h1>About Me</h1>
-  </div>
+  <section class="about section">
+    <div class="container">
+      <h1>About Me</h1>
+    </div>
+  </section>
 </template>
 
 <script>
