@@ -1,2 +1,16 @@
-$color-default: #2D3D50;
-$color-primary: #1474D5;
+// Old Color Schemes
+// $color-default: #2D3D50;
+// $color-primary: #1474D5;
+
+
+// Color Schemes
+$color-default: #003262;
+$color-primary: #FDB515;
+$color-secondary: #00B0DA;
+
+// Mixins
+@mixin transition-default {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
