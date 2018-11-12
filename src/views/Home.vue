@@ -6,7 +6,12 @@
     <div class="hero-body">
       <div class="container">
         <h1>Bimata Prathama</h1>
-        <h2>Front End Developer</h2>
+        <div class="home-role">
+          <h2>
+            <span v-if="roleType == 'text'">{{ roleTitle }}</span>
+            <a v-else-if="roleType == 'link'" v-bind:href="roleHref" target="_blank"><span>{{ roleTitle }}</span></a>
+          </h2>
+        </div>
         <div class="buttons">
           <router-link to="/work" class="button btn-default">See Case Studies</router-link>
         </div>
@@ -20,10 +25,92 @@ import {TweenLite, Expo} from 'gsap'
 
 export default {
   name: 'home',
+  data() {
+    return {
+      roleTitle: '',
+      roleType: '',
+      roleHref: '',
+      roles: [
+        {
+          title: 'Front End Developer',
+          type: 'text',
+          href: ''
+        },
+        {
+          title: 'Azeroth Adventurer',
+          type: 'text',
+          href: ''
+        },
+        {
+          title: 'Gunpla Builder & Collector',
+          type: 'link',
+          href: 'http://instagram.com/bimatagunpla'
+        },
+        {
+          title: 'Pokémon Trainer & Breeder',
+          type: 'text',
+          href: ''
+        },
+        {
+          title: 'Occasional Writer',
+          type: 'link',
+          href: 'http://storywork.bimataprathama.com'
+        },
+        {
+          title: 'Hobbyist Photographer',
+          type: 'text',
+          href: ''
+        },
+        {
+          title: 'CSGO Player',
+          type: 'text',
+          href: ''
+        },
+        {
+          title: 'Occasional Musician',
+          type: 'link',
+          href: 'http://soundcloud.com/bedeviere'
+        }
+      ]
+    };
+  },
   mounted() {
     this.getPattern();
+    this.getRoles();
   },
   methods: {
+    getRoles() {
+      var vm = this;
+      vm.roleTitle = vm.roles[0].title;
+      vm.roleType = vm.roles[0].type;
+      vm.roleHref = vm.roles[0].href;
+      var i = 1;
+      setInterval( function() {
+        var prev = setInterval( function() {
+          vm.roleTitle = vm.roleTitle.split('').slice(0, -1).join('');
+          if (vm.roleTitle.length == 0) {
+            clearInterval(prev);
+            var nextTitle = vm.roles[i].title.split('');
+            var j = 0;
+            var nextArr = [];
+            var next = setInterval( function() {
+              nextArr.push(nextTitle[j]);
+              vm.roleTitle = nextArr.join('');
+              j++;
+              if (j == vm.roles[i].title.length) {
+                clearInterval(next);
+              }
+            }, 25);
+            vm.roleType = vm.roles[i].type;
+            vm.roleHref = vm.roles[i].href;
+          }
+        }, 25);
+        i++;
+        if (i == vm.roles.length) {
+          i = 0;
+        }
+      }, 8000);
+    },
     getPattern() {
       function Animate(canvas, options) {
         this.canvas = canvas;
@@ -43,7 +130,7 @@ export default {
         circleColor: '0, 50, 98',
         radius: 4,
         lineWidth: 2,
-        lines: 4,  // Number of closest lines to draw
+        lines: 3,  // Number of closest lines to draw
         updateClosest : false, // Update closet points each loop
         mouse: true, // Link to mouse or random
 
@@ -362,5 +449,30 @@ export default {
     right: 0;
     bottom: 0;
     left: 0;
+  }
+
+  .home-role {
+    margin-bottom: 1rem;
+    h2 {
+      &::after {
+        content: '_';
+        display: inline;
+        animation-name: typing;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+      }
+    }
+  }
+
+  @keyframes typing {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
   }
 </style>

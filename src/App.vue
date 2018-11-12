@@ -62,7 +62,7 @@ export default {
   }
 
   html {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   body {
@@ -260,6 +260,7 @@ export default {
   }
 
   footer {
+    background-color: rgba(white, 0.85);
     width: 100%;
     height: 60px;
     line-height: 60px;
@@ -271,6 +272,7 @@ export default {
   @media only screen and (max-width: 1087px) {
     .navbar-menu {
       background-color: rgba(white, 0.85);
+      min-height: calc(100vh - 3.25rem - 60px);
       opacity: 0;
       visibility: hidden;
       box-shadow: none;
