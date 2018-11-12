@@ -1,8 +1,10 @@
 <template>
-  <div class="wrapper" id="app">
+  <div class="wrapper has-navbar-fixed-top" id="app">
     <header class="navbar is-fixed-top">
       <div class="navbar-brand">
-        <router-link to="/" class="navbar-item">Home</router-link>
+        <router-link to="/" class="navbar-item">
+          <img src="./assets/logo.png" alt="Bimata Prathama">
+        </router-link>
         <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" v-bind:class="{ 'is-active': navbarMenu }" v-on:click="navbarMenuToggle">
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
@@ -73,6 +75,9 @@ export default {
   .wrapper {
     min-height: 100%;
     position: relative;
+    &.has-navbar-fixed-top {
+      padding-top: 3.25rem;
+    }
   }
 
   .fade-enter-active,
@@ -116,6 +121,26 @@ export default {
 
   a {
     color: $color-primary;
+    position: relative;
+    @include transition-default;
+    &::after {
+      content: '';
+      display: block;
+      background-color: $color-primary;
+      width: 0;
+      height: .14em;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      @include transition-default;
+    }
+    &:hover,
+    &:focus {
+      color: $color-primary;
+      &::after {
+        width: 100%;
+      }
+    }
   }
 
   .button {
@@ -124,6 +149,9 @@ export default {
     font-weight: 700;
     text-transform: uppercase;
     @include transition-default;
+    &::after {
+      display: none;
+    }
   }
 
   .btn-default {
@@ -174,6 +202,15 @@ export default {
     }
   }
 
+  .navbar {
+    background-color: rgba(white, 0.85);
+    a {
+      &::after {
+        display: none;
+      }
+    }
+  }
+
   nav {
     font-family: 'Montserrat', Helvetica, Arial, sans-serif;
     > ul {
@@ -189,9 +226,8 @@ export default {
           text-decoration: none;
           text-transform: uppercase;
           display: block;
-          @include transition-default;
           &:hover,
-          &.router-link-exact-active {
+          &.router-link-active {
             color: $color-primary;
           }
         }
@@ -202,6 +238,13 @@ export default {
   .navbar-menu,
   .navbar-burger {
     @include transition-default;
+  }
+
+  .navbar-burger {
+    color: $color-default;
+    &:hover {
+      color: $color-default;
+    }
   }
 
   main {
@@ -227,8 +270,10 @@ export default {
 
   @media only screen and (max-width: 1087px) {
     .navbar-menu {
+      background-color: rgba(white, 0.85);
       opacity: 0;
       visibility: hidden;
+      box-shadow: none;
       display: block;
       position: absolute;
       left: 0;
