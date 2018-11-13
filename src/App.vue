@@ -123,23 +123,10 @@ export default {
     color: $color-primary;
     position: relative;
     @include transition-default;
-    &::after {
-      content: '';
-      display: block;
-      background-color: $color-primary;
-      width: 0;
-      height: .14em;
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      @include transition-default;
-    }
     &:hover,
     &:focus {
       color: $color-primary;
-      &::after {
-        width: 100%;
-      }
+      box-shadow:  0 -1px 0 0 white inset, 0 -0.24rem 0 0 $color-primary inset;
     }
   }
 
@@ -149,8 +136,9 @@ export default {
     font-weight: 700;
     text-transform: uppercase;
     @include transition-default;
-    &::after {
-      display: none;
+    &:hover,
+    &:focus {
+      box-shadow: none;
     }
   }
 
@@ -205,8 +193,9 @@ export default {
   .navbar {
     background-color: rgba(white, 0.85);
     a {
-      &::after {
-        display: none;
+      &:hover,
+      &:focus {
+        box-shadow: none;
       }
     }
   }

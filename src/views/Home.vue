@@ -76,40 +76,43 @@ export default {
   },
   mounted() {
     this.getPattern();
-    this.getRoles();
+
+    var vm = this;
+    var a = 0;
+
+    function roleTypingAll() {
+      if (a < vm.roles.length) {
+        vm.roleTitle = '';
+        vm.roleType = '';
+        vm.roleHref = '';
+        vm.roleTyping(a);
+        a++;
+        setTimeout(roleTypingAll, 8000);
+        if (a == vm.roles.length) {
+          a = 0;
+        }
+      }
+    }
+
+    roleTypingAll();
   },
   methods: {
-    getRoles() {
+    roleTyping(index) {
       var vm = this;
-      vm.roleTitle = vm.roles[0].title;
-      vm.roleType = vm.roles[0].type;
-      vm.roleHref = vm.roles[0].href;
       var i = 0;
-      setInterval( function() {
-        var prev = setInterval( function() {
-          vm.roleTitle = vm.roleTitle.split('').slice(0, -1).join('');
-          if (vm.roleTitle.length == 0) {
-            clearInterval(prev);
-            var nextTitle = vm.roles[i].title.split('');
-            var j = 0;
-            var nextArr = [];
-            var next = setInterval( function() {
-              nextArr.push(nextTitle[j]);
-              vm.roleTitle = nextArr.join('');
-              j++;
-              if (j == vm.roles[i].title.length) {
-                clearInterval(next);
-              }
-            }, 25);
-            vm.roleType = vm.roles[i].type;
-            vm.roleHref = vm.roles[i].href;
-          }
-        }, 25);
-        i++;
-        if (i == vm.roles.length) {
-          i = 0;
+
+      vm.roleType = vm.roles[index].type;
+      vm.roleHref = vm.roles[index].href;
+
+      function typeWriter() {
+        if (i < vm.roles[index].title.length) {
+          vm.roleTitle += vm.roles[index].title.charAt(i);
+          i++;
+          setTimeout(typeWriter, 50);
         }
-      }, 8000);
+      }
+
+      typeWriter();
     },
     getPattern() {
       function Animate(canvas, options) {
@@ -122,7 +125,7 @@ export default {
        * Default options
        */
       Animate.prototype.options = {
-        density: 13, // Affects how many poitns are created
+        density: parseInt(window.innerWidth / 146), // Affects how many poitns are created
         speed: 60, // Time in seconds to shift points
         sync: false, // Should points move in sync
         distance: 200, // Distance to move points
@@ -455,8 +458,9 @@ export default {
     margin-bottom: 1rem;
     h2 {
       &::after {
-        content: '_';
+        content: '\23AE';
         display: inline;
+        color: $color-primary;
         animation-name: typing;
         animation-duration: 1s;
         animation-iteration-count: infinite;
