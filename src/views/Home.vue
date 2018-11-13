@@ -84,7 +84,7 @@ export default {
       vm.roleTitle = vm.roles[0].title;
       vm.roleType = vm.roles[0].type;
       vm.roleHref = vm.roles[0].href;
-      var i = 1;
+      var i = 0;
       setInterval( function() {
         var prev = setInterval( function() {
           vm.roleTitle = vm.roleTitle.split('').slice(0, -1).join('');
