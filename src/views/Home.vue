@@ -51,11 +51,11 @@ export default {
           type: 'text',
           href: ''
         },
-        {
-          title: 'Occasional Writer',
-          type: 'link',
-          href: 'http://storywork.bimataprathama.com'
-        },
+        // {
+        //   title: 'Occasional Writer',
+        //   type: 'link',
+        //   href: 'http://storywork.bedeviere.com'
+        // },
         {
           title: 'Hobbyist Photographer',
           type: 'text',

@@ -5,6 +5,7 @@ import Works from './views/Works.vue'
 import Work from './views/Work.vue'
 import About from './views/About.vue'
 import Contact from './views/Contact.vue'
+import NotFound from './views/NotFound.vue'
 
 Vue.use(Router)
 
@@ -36,6 +37,15 @@ export default new Router({
       path: '/contact',
       name: 'contact',
       component: Contact
+    },
+    {
+      path: '/404',
+      name: 'not-found',
+      component: NotFound
+    },
+    {
+      path: '*',
+      redirect: '/404'
     }
   ]
 })

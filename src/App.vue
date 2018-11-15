@@ -24,7 +24,7 @@
         <router-view></router-view>
       </transition>
     </main>
-    <footer>Footer</footer>
+    <footer>&copy; 2018 Bimata Prathama</footer>
   </div>
 </template>
 
@@ -70,6 +70,10 @@ export default {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: $color-default;
+  }
+
+  ::selection {
+    background-color: $color-primary;
   }
 
   .wrapper {
@@ -123,6 +127,9 @@ export default {
     color: $color-primary;
     position: relative;
     @include transition-default;
+    &::selection {
+      color: white;
+    }
     &:hover,
     &:focus {
       color: $color-primary;
