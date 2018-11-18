@@ -4,7 +4,7 @@
       <h1>Works</h1>
       <div class="works-list">
         <div class="works-item" v-for="(work, i) in workList" v-bind:key="i">
-          <div class="works-image">
+          <div class="image works-image">
             <img v-bind:alt="work.title" v-bind:src="getImageURL(work.thumbnail_path)">
           </div>
           <div class="columns">
@@ -60,10 +60,5 @@
 <style lang="scss">
   .works-item {
     margin-bottom: 3.75em;
-  }
-  .works-image {
-    img {
-      width: 100%;
-    }
   }
 </style>

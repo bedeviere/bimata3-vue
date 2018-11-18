@@ -123,6 +123,10 @@ export default {
     font-size: 1.333rem;
   }
 
+  p {
+    margin-bottom: .5em;
+  }
+
   a {
     color: $color-primary;
     position: relative;
@@ -133,7 +137,7 @@ export default {
     &:hover,
     &:focus {
       color: $color-primary;
-      box-shadow:  0 -1px 0 0 white inset, 0 -0.24rem 0 0 $color-primary inset;
+      box-shadow:  0 -1px 0 0 white inset, 0 -0.15em 0 0 $color-primary inset;
     }
   }
 

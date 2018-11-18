@@ -7,7 +7,7 @@
       <div class="container">
         <h1>404</h1>
         <p>This is not the page you're looking for</p>
-        <router-link to="/" class="button btn-default">Back to Home</router-link>
+        <router-link to="/" class="button btn-default">Move Along</router-link>
       </div>
     </div>
   </section>
