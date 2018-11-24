@@ -26,7 +26,7 @@
             <p>Tama Harianto, Bedeviere</p>
             <br>
             <h4>Additional Links</h4>
-            <p><a href="http://storywork.bimataprathama.com/" target="_blank">My Storywork</a></p>
+            <p><a href="http://storywork.bedeviere.com/" target="_blank">My Storywork</a></p>
             <p><a href="http://instagram.com/bimatagunpla" target="_blank">My Gunpla Collection</a></p>
           </div>
         </div>
