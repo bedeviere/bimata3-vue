@@ -24,11 +24,59 @@
             <br>
             <h4>Also Known As</h4>
             <p>Tama Harianto, Bedeviere</p>
-            <br>
-            <h4>Additional Links</h4>
-            <p><a href="http://storywork.bedeviere.com/" target="_blank">My Storywork</a></p>
-            <p><a href="http://instagram.com/bimatagunpla" target="_blank">My Gunpla Collection</a></p>
           </div>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column">
+          <div class="columns">
+            <div class="column">
+              <div class="about-service">
+                <h4>What I Do</h4>
+                <ul class="list-bullet">
+                  <li>Front-End Development</li>
+                  <li>Mobile First Design</li>
+                  <li>WordPress Development</li>
+                </ul>
+              </div>
+            </div>
+            <div class="column">
+              <div calss="about-tech">
+                <h4>Tech Stack</h4>
+                <ul class="list-bullet">
+                  <li>HTML5</li>
+                  <li>CSS3 / SCSS / LESS</li>
+                  <li>JS / Node / Vue.JS / AngularJS</li>
+                  <li>WordPress CMS</li>
+                  <li>Git</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="columns">
+            <div class="column">
+              <div calss="about-design">
+                <h4>Design Tools</h4>
+                <ul class="list-bullet">
+                  <li>Illustrator</li>
+                  <li>Photoshop</li>
+                  <li>Adobe XD</li>
+                </ul>
+              </div>
+            </div>
+            <div class="column">
+              <div class="about-love">
+                <h4>What I &lt;3</h4>
+                <ul class="list-bullet">
+                  <li><a href="http://storywork.bedeviere.com/" target="_blank">Storywork</a></li>
+                  <li><a href="http://instagram.com/bimatagunpla" target="_blank">Gunpla</a></li>
+                  <li><a href="https://wow.gamepedia.com/Alliance">For the Alliance!</a></li>
+                </ul>
+              </div>
+            </div>
+          </div> 
         </div>
       </div>
     </div>
@@ -63,5 +111,9 @@ export default {
       font-size: 28px;
       font-weight: 400;
     }
+  }
+  ul.list-bullet {
+    list-style: disc;
+    padding-left: 1em;
   }
 </style>
