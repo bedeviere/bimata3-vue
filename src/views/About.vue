@@ -70,9 +70,9 @@
               <div class="about-love">
                 <h4>What I &lt;3</h4>
                 <ul class="list-bullet">
-                  <li><a href="http://storywork.bedeviere.com/" target="_blank">Storywork</a></li>
+                  <li><a href="https://pinterest.com/bedeviere/for-the-alliance/" target="_blank">For the Alliance!</a></li>
                   <li><a href="http://instagram.com/bimatagunpla" target="_blank">Gunpla</a></li>
-                  <li><a href="https://wow.gamepedia.com/Alliance">For the Alliance!</a></li>
+                  <li><a href="https://pinterest.com/bedeviere/troopers/" target="_blank">Troopers</a></li>
                 </ul>
               </div>
             </div>
@@ -90,30 +90,4 @@ export default {
 </script>
 
 <style lang="scss">
-  ul.list-social {
-    > li {
-      display: inline-block;
-      margin-left: 10px;
-      margin-right: 10px;
-      &:first-child {
-        margin-left: -2px;
-      }
-      &:last-child {
-        margin-right: -2px;
-      }
-    }
-    .button {
-      padding: 0;
-      width: 60px;
-      height: 60px;
-      line-height: 56px;
-      border-radius: 100%;
-      font-size: 28px;
-      font-weight: 400;
-    }
-  }
-  ul.list-bullet {
-    list-style: disc;
-    padding-left: 1em;
-  }
 </style>

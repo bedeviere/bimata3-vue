@@ -131,6 +131,11 @@ export default {
     color: $color-primary;
     position: relative;
     @include transition-default;
+    span {
+      &::selection {
+        color: white;
+      }
+    }
     &::selection {
       color: white;
     }
@@ -199,6 +204,34 @@ export default {
       border-color: $color-primary;
       color: $color-default;
     }
+  }
+
+  ul.list-social {
+    > li {
+      display: inline-block;
+      margin-left: 10px;
+      margin-right: 10px;
+      &:first-child {
+        margin-left: -2px;
+      }
+      &:last-child {
+        margin-right: -2px;
+      }
+    }
+    .button {
+      padding: 0;
+      width: 40px;
+      height: 40px;
+      line-height: 36px;
+      border-radius: 100%;
+      font-size: 18px;
+      font-weight: 400;
+    }
+  }
+  
+  ul.list-bullet {
+    list-style: disc;
+    padding-left: 1em;
   }
 
   .navbar {
@@ -270,6 +303,9 @@ export default {
   }
 
   @media only screen and (max-width: 1087px) {
+    nav {
+      font-size: 2em;
+    }
     .navbar-menu {
       background-color: rgba(white, 0.85);
       min-height: calc(100vh - 3.25rem - 60px);
@@ -290,6 +326,14 @@ export default {
   @media only screen and (min-width: 768px) {
     html {
       font-size: 20px;
+    }
+    ul.list-social {
+      .button {
+        width: 60px;
+        height: 60px;
+        line-height: 56px;
+        font-size: 28px;
+      }
     }
   }
 </style>
