@@ -11,6 +11,7 @@
         <div class="column">
           <div class="about-overview">
             <p>Hi! I'm Bimata, a front-end developer based in Jakarta, Indonesia. I develop modern, responsive websites using seasoned, practical front-end technologies such as Vue.JS and AngularJS. Besides developing, I also love to do some research on current trends of UI and UX. I focused on simplicity, modularity, and easy maintenance.</p>
+            <p>My usual workflow is to start from paper and design tools, or to code from an already existing prepared design. Though, I'm also comfortable in direct designing using HTML codes.</p>
             <p>By day, I code and design either for a living or to learn and experiment new technologies. By night, you might find me adventuring around <a href="https://worldofwarcraft.com/en-gb/character/ravenholdt/Bedeviere" target="_blank">Azeroth</a>, slaying demons and stuff.</p>
             <br>
             <!-- <p>I'm also an addict for toy figures and gunpla. Sometimes, I take pictures of them while they pretend to be humans, doing normal, human things.</p> -->
@@ -60,8 +61,8 @@
               <div calss="about-design">
                 <h4>Design Tools</h4>
                 <ul class="list-bullet">
-                  <li>Illustrator</li>
-                  <li>Photoshop</li>
+                  <li>Adobe Illustrator</li>
+                  <li>Adobe Photoshop</li>
                   <li>Adobe XD</li>
                 </ul>
               </div>
@@ -72,6 +73,7 @@
                 <ul class="list-bullet">
                   <li><a href="https://pinterest.com/bedeviere/for-the-alliance/" target="_blank">For the Alliance!</a></li>
                   <li><a href="http://instagram.com/bimatagunpla" target="_blank">Gunpla</a></li>
+                  <li><a href="https://youtu.be/F64yFFnZfkI" target="_blank">Yorushika - "Say It."</a></li>
                   <li><a href="https://pinterest.com/bedeviere/troopers/" target="_blank">Troopers</a></li>
                 </ul>
               </div>

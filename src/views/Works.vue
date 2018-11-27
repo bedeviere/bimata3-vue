@@ -5,15 +5,23 @@
       <div class="works-list">
         <div class="works-item" v-for="(work, i) in workList" v-bind:key="i">
           <div class="image works-image">
-            <img v-bind:alt="work.title" v-bind:src="getImageURL(work.thumbnail_path)">
+            <router-link v-bind:to="'/work/' + work.slug"><img v-bind:alt="work.title" v-bind:src="getImageURL(work.thumbnail_path)"></router-link>
           </div>
           <div class="columns">
             <div class="column">
-              <h3 class="works-title">{{ work.title }}</h3>
-              <p class="works-type">{{ work.type }}</p>
+              <h3 class="works-title"><router-link v-bind:to="'/work/' + work.slug">{{ work.title }}</router-link></h3>
+              <div class="works-role">
+                <span v-for="(role, i) in work.role" v-bind:key="i">{{ role.name }}<span v-if="i != (work.role.length - 1)">, </span></span>
+              </div>
+              <div class="works-type">{{ work.type }}</div>
             </div>
             <div class="column">
-              <p class="works-overview">{{ work.overview }}</p>
+              <article class="works-overview">
+                <p v-html="work.overview"></p>
+              </article>
+              <div class="buttons">
+                <router-link v-bind:to="'/work/' + work.slug" class="button btn-default">Case Study</router-link>
+              </div>
             </div>
           </div>
         </div>
@@ -60,5 +68,11 @@
 <style lang="scss">
   .works-item {
     margin-bottom: 3.75em;
+  }
+  .works-title {
+    margin-top: .5em;
+  }
+  .works-overview {
+    margin-top: 1em;
   }
 </style>
