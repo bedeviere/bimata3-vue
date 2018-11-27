@@ -14,7 +14,6 @@
             <p>My usual workflow is to start from paper and design tools, or to code from an already existing prepared design. Though, I'm also comfortable in direct designing using HTML codes.</p>
             <p>By day, I code and design either for a living or to learn and experiment new technologies. By night, you might find me adventuring around <a href="https://worldofwarcraft.com/en-gb/character/ravenholdt/Bedeviere" target="_blank">Azeroth</a>, slaying demons and stuff.</p>
             <br>
-            <!-- <p>I'm also an addict for toy figures and gunpla. Sometimes, I take pictures of them while they pretend to be humans, doing normal, human things.</p> -->
             <h4>Social</h4>
             <ul class="list-social">
               <li><a class="button btn-default" href="http://github.com/bedeviere" target="_blank"><i class="fab fa-github"></i></a></li>

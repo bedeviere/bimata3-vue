@@ -71,6 +71,13 @@
   }
   .works-title {
     margin-top: .5em;
+    a {
+      color: $color-default;
+      &:hover,
+      &:focus {
+        color: $color-primary;
+      }
+    }
   }
   .works-overview {
     margin-top: 1em;
