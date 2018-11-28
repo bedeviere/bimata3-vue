@@ -20,7 +20,7 @@
                 <p v-html="work.overview"></p>
               </article>
               <div class="buttons">
-                <router-link v-bind:to="'/work/' + work.slug" class="button btn-default">Case Study</router-link>
+                <router-link v-bind:to="'/work/' + work.slug" class="button btn-default">Case Study&nbsp;<i class="fas fa-long-arrow-alt-right"></i></router-link>
               </div>
             </div>
           </div>

@@ -13,7 +13,7 @@
           </h2>
         </div>
         <div class="buttons">
-          <router-link to="/work" class="button btn-default">See Case Studies</router-link>
+          <router-link to="/work" class="button btn-default">See Case Studies&nbsp;<i class="fas fa-long-arrow-alt-right"></i></router-link>
         </div>
       </div>
     </div>

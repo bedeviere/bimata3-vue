@@ -5,6 +5,29 @@
       <div class="image work-image">
         <img v-bind:alt="work.title" v-bind:src="getImageURL(work.thumbnail_path)">
       </div>
+      <div class="columns work-info">
+        <div class="column is-offset-2-desktop is-8">
+          <div class="work-role">
+            <label><strong>Role</strong></label>
+            <p><span v-for="(role, i) in work.role" v-bind:key="i">{{ role.name }}<span v-if="i != (work.role.length - 1)">, </span></span></p>
+          </div>
+          <div class="work-tech">
+            <label><strong>Technology</strong></label>
+            <p><span v-for="(tool, i) in work.tools" v-bind:key="i">{{ tool.name }}<span v-if="i != (work.tools.length - 1)">, </span></span></p>
+          </div>
+          <div class="work-type">
+            <label><strong>Type</strong></label>
+            <p>{{ work.type }}</p>
+          </div>
+          <div class="work-agency" v-if="work.agency_name.length != 0">
+            <label><strong>Agency</strong></label>
+            <a v-bind:href="agency_link">{{ work.agency_name }}</a>
+          </div>
+          <div class="buttons work-live">
+            <a v-bind:href="work.link" target="_blank" class="button btn-default">See It Live&nbsp;<i class="fas fa-external-link-square-alt"></i></a>
+          </div>
+        </div>
+      </div>
       <article class="work-article">
         <div class="columns" v-for="(article, i) in work.article" v-bind:key="i">
           <div class="column is-offset-2-desktop is-8" v-if="article.type == 'paragraph'">
@@ -111,6 +134,16 @@
 </script>
 
 <style lang="scss">
+  .work-info {
+    margin-top: .75em;
+  }
+  .work-live {
+    text-align: center;
+    .button {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
   .work-article {
     margin-top: .75em; 
   }
