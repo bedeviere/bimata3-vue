@@ -11,7 +11,7 @@
         <div class="column">
           <div class="about-overview">
             <p>Hi! I'm Bimata, a front-end developer based in Jakarta, Indonesia. I develop modern, responsive websites using seasoned, practical front-end technologies such as Vue.JS and AngularJS. Besides developing, I also love to do some research on current trends of UI and UX. I focused on simplicity, modularity, and easy maintenance.</p>
-            <p>My usual workflow is to start from paper and design tools, or to code from an already existing prepared design. Though, I'm also comfortable in direct designing using HTML codes.</p>
+            <p>My usual workflow is to start from paper and design tools, or to code from an already existing prepared design. Though, I'm also comfortable in direct designing with code.</p>
             <p>By day, I code and design either for a living or to learn and experiment new technologies. By night, you might find me adventuring around <a href="https://worldofwarcraft.com/en-gb/character/ravenholdt/Bedeviere" target="_blank">Azeroth</a>, slaying demons and stuff.</p>
             <br>
             <h4>Social</h4>
