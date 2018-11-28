@@ -146,6 +146,19 @@ export default {
     }
   }
 
+  strong {
+    color: inherit;
+  }
+
+  .image {
+    text-align: center;
+    .image-info {
+      font-size: .75em;
+      color: $color-default;
+      opacity: .75;
+    }
+  }
+
   .button {
     border-width: 2px;
     font-family: 'Montserrat', Helvetica, Arial, sans-serif;
@@ -201,6 +214,27 @@ export default {
     &:hover,
     &:focus {
       background-color: $color-primary;
+      border-color: $color-primary;
+      color: $color-default;
+    }
+  }
+
+  .quote {
+    font-style: italic;
+    font-size: 1.333em;
+    opacity: .75;
+  }
+
+  .highlight-default {
+    .message-body {
+      border-color: $color-default;
+      color: $color-default;
+    }
+  }
+
+  .highlight-primary {
+    background-color: lighten( $color-primary, 40% );
+    .message-body {
       border-color: $color-primary;
       color: $color-default;
     }

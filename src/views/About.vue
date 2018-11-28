@@ -16,10 +16,10 @@
             <br>
             <h4>Social</h4>
             <ul class="list-social">
-              <li><a class="button btn-default" href="http://github.com/bedeviere" target="_blank"><i class="fab fa-github"></i></a></li>
-              <li><a class="button btn-default" href="http://codepen.com/bedeviere" target="_blank"><i class="fab fa-codepen"></i></a></li>
-              <li><a class="button btn-default" href="http://linkedin.com/in/bedeviere" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-              <li><a class="button btn-default" href="http://instagram.com/bedeviere" target="_blank"><i class="fab fa-instagram"></i></a></li>
+              <li><a class="button btn-default" href="http://github.com/bedeviere" target="_blank"><i class="fab fa-fw fa-github"></i></a></li>
+              <li><a class="button btn-default" href="http://codepen.com/bedeviere" target="_blank"><i class="fab fa-fw fa-codepen"></i></a></li>
+              <li><a class="button btn-default" href="http://linkedin.com/in/bedeviere" target="_blank"><i class="fab fa-fw fa-linkedin-in"></i></a></li>
+              <li><a class="button btn-default" href="http://instagram.com/bedeviere" target="_blank"><i class="fab fa-fw fa-instagram"></i></a></li>
             </ul>
             <br>
             <h4>Also Known As</h4>
