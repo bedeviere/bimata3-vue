@@ -30,6 +30,12 @@
       </div>
       <article class="work-article">
         <div class="columns" v-for="(article, i) in work.article" v-bind:key="i">
+          <div class="column is-offset-3-desktop is-6" v-if="article.type == 'h3'">
+            <h3 v-html="article.content"></h3>
+          </div>
+          <div class="column is-offset-3-desktop is-6" v-if="article.type == 'h4'">
+            <h4 v-html="article.content"></h4>
+          </div>
           <div class="column is-offset-3-desktop is-6" v-if="article.type == 'paragraph'">
             <p v-html="article.content"></p>
           </div>
@@ -68,7 +74,22 @@
         </div>
         <div class="columns">
           <div class="column is-offset-3-desktop is-6">
+            <p>We choose to go to the moon in this decade and do the other things, not because they are easy, but because they are hard, because that goal will serve to organize and measure the best of our energies and skills, because that challenge is one that we are willing to accept, one we are unwilling to postpone, and one which we intend to win.</p>
+          </div>
+        </div>
+        <div class="columns">
+          <div class="column is-offset-3-desktop is-6">
+            <h3>Space: The Final Frontier</h3>
+          </div>
+        </div>
+        <div class="columns">
+          <div class="column is-offset-3-desktop is-6">
             <p>Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet, in which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman’s earth, if free men make it, will be truly round: a globe in practice, not in theory.</p>
+          </div>
+        </div>
+        <div class="columns">
+          <div class="column is-offset-3-desktop is-6">
+            <h4>Enterprise</h4>
           </div>
         </div>
         <div class="columns">
@@ -82,7 +103,7 @@
         </div>
         <div class="columns">
           <div class="column is-offset-3-desktop is-6 ">
-            <p>It suddenly struck me that that tiny pea, pretty and blue, was the Earth. I put up my thumb and shut one eye, and my thumb blotted out the planet Earth. I didn’t feel like a giant. I felt very, very small.</p>
+            <p>It suddenly struck me that that <em>tiny pea, pretty and blue</em>, was the <strong>Earth</strong>. I put up my thumb and shut one eye, and my thumb blotted out the planet Earth. <a>I didn’t feel like a giant</a>. I felt very, very small.</p>
           </div>
         </div>
       </article>
@@ -140,6 +161,10 @@
     }
   }
   .work-article {
-    margin-top: .75em; 
+    margin-top: .75em;
+    h3,
+    h4 {
+      margin-bottom: -0.75em;
+    }
   }
 </style>
