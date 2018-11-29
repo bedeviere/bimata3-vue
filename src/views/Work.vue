@@ -48,7 +48,13 @@
             <blockquote class="quote" v-html="article.content"></blockquote>
           </div>
           <div class="column">
-            <div class="image work-image" v-if="article.type == 'image'">
+            <div class="image work-image" v-if="article.type == 'image-large'">
+              <img v-bind:alt="article.label" v-bind:src="article.content">
+              <label class="image-info" v-html="article.label"></label>
+            </div>
+          </div>
+          <div class="column is-offset-3-desktop is-6">
+            <div class="image work-image" v-if="article.type == 'image-small'">
               <img v-bind:alt="article.label" v-bind:src="article.content">
               <label class="image-info" v-html="article.label"></label>
             </div>
@@ -75,6 +81,14 @@
         <div class="columns">
           <div class="column is-offset-3-desktop is-6">
             <p>We choose to go to the moon in this decade and do the other things, not because they are easy, but because they are hard, because that goal will serve to organize and measure the best of our energies and skills, because that challenge is one that we are willing to accept, one we are unwilling to postpone, and one which we intend to win.</p>
+          </div>
+        </div>
+        <div class="columns">
+          <div class="column is-offset-3-desktop is-6">
+            <div class="image work-image">
+              <img v-bind:alt="work.title" v-bind:src="getImageURL(work.thumbnail_path)">
+              <label class="image-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
+            </div>
           </div>
         </div>
         <div class="columns">
