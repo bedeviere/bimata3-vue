@@ -223,7 +223,7 @@ export default {
     font-style: italic;
     font-size: 1.333em;
     opacity: .75;
-    // padding-left: 2em;
+    padding-left: 2em;
   }
 
   .highlight-default {
