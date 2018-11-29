@@ -133,8 +133,9 @@
       },
       getWork() {
         var vm = this;
+        var apiURL = process.env.VUE_APP_ROOT_API;
 
-        axios.get('http://localhost:7750/work/' + vm.$route.params.slug)
+        axios.get(apiURL + '/work/' + vm.$route.params.slug)
           .then(function(res) {
             vm.work = res.data;
             if (res.data == null || res.data == '') {
