@@ -223,9 +223,17 @@ export default {
     font-style: italic;
     font-size: 1.333em;
     opacity: .75;
+    // padding-left: 2em;
   }
 
   .highlight-default {
+    a {
+      &:not(.button),
+      &:not(.tag) {
+        color: $color-primary;
+        text-decoration: none;
+      }
+    }
     .message-body {
       border-color: $color-default;
       color: $color-default;

@@ -6,7 +6,7 @@
         <img v-bind:alt="work.title" v-bind:src="getImageURL(work.thumbnail_path)">
       </div>
       <div class="columns work-info">
-        <div class="column is-offset-2-desktop is-8">
+        <div class="column is-offset-3-desktop is-6">
           <div class="work-role">
             <label><strong>Role</strong></label>
             <p><span v-for="(role, i) in work.role" v-bind:key="i">{{ role.name }}<span v-if="i != (work.role.length - 1)">, </span></span></p>
@@ -30,10 +30,10 @@
       </div>
       <article class="work-article">
         <div class="columns" v-for="(article, i) in work.article" v-bind:key="i">
-          <div class="column is-offset-2-desktop is-8" v-if="article.type == 'paragraph'">
+          <div class="column is-offset-3-desktop is-6" v-if="article.type == 'paragraph'">
             <p v-html="article.content"></p>
           </div>
-          <div class="column is-offset-2-desktop is-8" v-if="article.type == 'highlight'">
+          <div class="column is-offset-3-desktop is-6" v-if="article.type == 'highlight'">
             <div class="message highlight-default">
               <div class="message-body" v-html="article.content"></div>
             </div>
@@ -49,13 +49,13 @@
           </div>
         </div>
         <div class="columns">
-          <div class="column is-offset-2-desktop is-8">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.</p>
+          <div class="column is-offset-3-desktop is-6">
+            <p>Space: The final frontier. These are the voyages of the Starship, Enterprise. Its five-year mission: To explore strange new worlds, to seek out new life and new civilizations, to boldly go where no man has gone before.</p>
           </div>
         </div>
         <div class="columns">
           <div class="column is-offset-3-desktop is-6">
-            <blockquote class="quote">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla."</blockquote>
+            <blockquote class="quote">"We are all connected; To each other, biologically. To the earth, chemically. To the rest of the universe atomically."</blockquote>
           </div>
         </div>
         <div class="columns">
@@ -67,27 +67,22 @@
           </div>
         </div>
         <div class="columns">
-          <div class="column is-offset-2-desktop is-8">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.</p>
+          <div class="column is-offset-3-desktop is-6">
+            <p>Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet, in which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman’s earth, if free men make it, will be truly round: a globe in practice, not in theory.</p>
           </div>
         </div>
         <div class="columns">
-          <div class="column is-offset-2-desktop is-8">
+          <div class="column is-offset-3-desktop is-6">
             <div class="message highlight-default">
               <div class="message-body">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+                For those who have seen the Earth from space, and for the hundreds and perhaps thousands more who will, the experience most certainly changes your perspective. The things that we share in our world are far more valuable than those which divide us.
               </div>
             </div>
           </div>
         </div>
         <div class="columns">
-          <div class="column is-offset-2-desktop is-8">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.</p>
-          </div>
-        </div>
-        <div class="columns">
-          <div class="column is-offset-2-desktop is-8">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.</p>
+          <div class="column is-offset-3-desktop is-6 ">
+            <p>It suddenly struck me that that tiny pea, pretty and blue, was the Earth. I put up my thumb and shut one eye, and my thumb blotted out the planet Earth. I didn’t feel like a giant. I felt very, very small.</p>
           </div>
         </div>
       </article>
