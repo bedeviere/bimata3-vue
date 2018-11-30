@@ -30,46 +30,55 @@ export default {
       roleTitle: '',
       roleType: '',
       roleHref: '',
+      roleDuration: 8000,
       roles: [
         {
           title: 'Front End Developer',
           type: 'text',
-          href: ''
+          href: '',
+          duration: 16000
         },
         {
           title: 'Azeroth Adventurer',
           type: 'text',
-          href: ''
+          href: '',
+          duration: 8000
         },
         {
           title: 'Gunpla Builder & Collector',
           type: 'link',
-          href: 'http://instagram.com/bimatagunpla'
+          href: 'http://instagram.com/bimatagunpla',
+          duration: 8000
         },
         {
           title: 'Pokémon Trainer & Breeder',
           type: 'text',
-          href: ''
+          href: '',
+          duration: 8000
         },
         {
           title: 'Occasional Writer',
           type: 'link',
-          href: 'http://storywork.bedeviere.com'
+          href: 'http://storywork.bedeviere.com',
+          duration: 8000
         },
         {
           title: 'Hobbyist Photographer',
           type: 'text',
-          href: ''
+          href: '',
+          duration: 8000
         },
         {
           title: 'CSGO Player',
           type: 'text',
-          href: ''
+          href: '',
+          duration: 8000
         },
         {
           title: 'Occasional Musician',
           type: 'link',
-          href: 'http://soundcloud.com/bedeviere'
+          href: 'http://soundcloud.com/bedeviere',
+          duration: 8000
         }
       ]
     };
@@ -85,12 +94,13 @@ export default {
         vm.roleTitle = '';
         vm.roleType = '';
         vm.roleHref = '';
+        vm.roleDuration = vm.roles[a].duration;
         vm.roleTyping(a);
         a++;
-        setTimeout(roleTypingAll, 8000);
         if (a == vm.roles.length) {
           a = 0;
         }
+        setTimeout(roleTypingAll, vm.roleDuration);
       }
     }
 
