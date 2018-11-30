@@ -5,7 +5,7 @@
       <div class="works-list">
         <div class="works-item" v-for="(work, i) in workList" v-bind:key="i">
           <div class="image works-image">
-            <router-link v-bind:to="'/work/' + work.slug"><img v-bind:alt="work.title" v-bind:src="getImageURL(work.thumbnail_path)"></router-link>
+            <router-link v-bind:to="'/work/' + work.slug"><img v-bind:alt="work.title" v-bind:src="'http://cdn.bedeviere.com/work' + work.thumbnail_path"></router-link>
           </div>
           <div class="columns">
             <div class="column">

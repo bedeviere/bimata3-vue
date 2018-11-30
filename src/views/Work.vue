@@ -3,7 +3,7 @@
     <div class="container">
       <h1><router-link to="/work">Works</router-link> / {{ work.title }}</h1>
       <div class="image work-image">
-        <img v-bind:alt="work.title" v-bind:src="getImageURL(work.thumbnail_path)">
+        <img v-bind:alt="work.title" v-bind:src="'http://cdn.bedeviere.com/work' + work.thumbnail_path">
       </div>
       <div class="columns work-info">
         <div class="column is-offset-3-desktop is-6">
@@ -19,9 +19,9 @@
             <label><strong>Type</strong></label>
             <p>{{ work.type }}</p>
           </div>
-          <div class="work-agency" v-if="work.agency_name.length != 0">
+          <div class="work-agency" v-if="work.agency_name != '-'">
             <label><strong>Agency</strong></label>
-            <a v-bind:href="agency_link">{{ work.agency_name }}</a>
+            <a v-bind:href="work.agency_link">{{ work.agency_name }}</a>
           </div>
           <div class="buttons work-live">
             <a v-bind:href="work.link" target="_blank" class="button btn-default">See It Live&nbsp;<i class="fas fa-external-link-square-alt"></i></a>
@@ -73,7 +73,7 @@
         <div class="columns">
           <div class="column">
             <div class="image work-image">
-              <img v-bind:alt="work.title" v-bind:src="getImageURL(work.thumbnail_path)">
+              <img v-bind:alt="work.title" v-bind:src="'http://cdn.bedeviere.com/work' + work.thumbnail_path">
               <label class="image-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
             </div>
           </div>
@@ -86,7 +86,7 @@
         <div class="columns">
           <div class="column is-offset-3-desktop is-6">
             <div class="image work-image">
-              <img v-bind:alt="work.title" v-bind:src="getImageURL(work.thumbnail_path)">
+              <img v-bind:alt="work.title" v-bind:src="'http://cdn.bedeviere.com/work' + work.thumbnail_path">
               <label class="image-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
             </div>
           </div>
