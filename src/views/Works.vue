@@ -46,10 +46,6 @@
       this.getWorks();
     },
     methods: {
-      getImageURL(path) {
-        var images = require.context('../assets', false);
-        return images('.' + path);
-      },
       getWorks() {
         var vm = this;
         var apiURL = process.env.VUE_APP_ROOT_API;

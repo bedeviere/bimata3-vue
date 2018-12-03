@@ -49,13 +49,13 @@
           </div>
           <div class="column">
             <div class="image work-image" v-if="article.type == 'image-large'">
-              <img v-bind:alt="article.label" v-bind:src="article.content">
+              <img v-bind:alt="article.label" v-bind:src="'http://cdn.bedeviere.com/work' + article.content">
               <label class="image-info" v-html="article.label"></label>
             </div>
           </div>
           <div class="column is-offset-3-desktop is-6">
             <div class="image work-image" v-if="article.type == 'image-small'">
-              <img v-bind:alt="article.label" v-bind:src="article.content">
+              <img v-bind:alt="article.label" v-bind:src="'http://cdn.bedeviere.com/work' + article.content">
               <label class="image-info" v-html="article.label"></label>
             </div>
           </div>
@@ -141,10 +141,6 @@
       this.getWork();
     },
     methods: {
-      getImageURL(path) {
-        var images = require.context('../assets', false);
-        return images('.' + path);
-      },
       getWork() {
         var vm = this;
         var apiURL = process.env.VUE_APP_ROOT_API;

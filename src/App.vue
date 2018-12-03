@@ -84,8 +84,7 @@ export default {
     }
   }
 
-  .fade-enter-active,
-  .fade-leave-active {
+  .fade-enter-active {
     transition-duration: 0.3s;
     transition-property: opacity;
     transition-timing-function: ease;
