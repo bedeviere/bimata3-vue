@@ -116,8 +116,16 @@
           </div>
         </div>
         <div class="columns">
-          <div class="column is-offset-3-desktop is-6 ">
+          <div class="column is-offset-3-desktop is-6">
             <p>It suddenly struck me that that <em>tiny pea, pretty and blue</em>, was the <strong>Earth</strong>. I put up my thumb and shut one eye, and my thumb blotted out the planet Earth. <a>I didn’t feel like a giant</a>. I felt very, very small.</p>
+          </div>
+        </div>
+        <div class="columns">
+          <div class="column is-half">
+            <h3 class="work-prev"><router-link to="/work"><i class="fas fa-long-arrow-alt-left"></i>&nbsp;Works</router-link></h3>
+          </div>
+          <div class="column is-half">
+            <h3 class="work-next"><router-link v-bind:to="'/work/' + work.next_slug">{{ work.next_title }}&nbsp;<i class="fas fa-long-arrow-alt-right"></i></router-link></h3>
           </div>
         </div>
       </article>
@@ -177,5 +185,11 @@
     h4 {
       margin-bottom: -0.75em;
     }
+  }
+  .work-prev {
+    text-align: left;
+  }
+  .work-next {
+    text-align: right;
   }
 </style>
