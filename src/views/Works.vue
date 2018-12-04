@@ -69,6 +69,9 @@
   .works-item {
     margin-bottom: 3.75em;
   }
+  .works-type {
+    font-weight: 700;
+  }
   .works-title {
     a {
       color: $color-default;
@@ -77,6 +80,9 @@
         color: $color-primary;
       }
     }
+  }
+  .works-role {
+    font-style: italic;
   }
   .works-overview {
     margin-top: 1em;
