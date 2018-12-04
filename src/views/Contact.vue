@@ -35,7 +35,7 @@
           </div>
           <div class="field">
             <div class="control">
-              <input class="input is-medium" type="text" placeholder="Phone">
+              <input class="input is-medium" type="text" placeholder="Phone (optional)">
             </div>
           </div>
         </div>
