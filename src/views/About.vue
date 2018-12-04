@@ -80,6 +80,9 @@
           </div> 
         </div>
       </div>
+      <div class="link-next">
+        <h3><router-link to="/work">Works&nbsp;<i class="fas fa-long-arrow-alt-right"></i></router-link></h3>
+      </div>
     </div>
   </section>
 </template>

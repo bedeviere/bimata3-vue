@@ -275,6 +275,29 @@ export default {
     padding-left: 1em;
   }
 
+  .input,
+  .textarea {
+    box-shadow: none;
+    border-width: 2px;
+    border-color: $color-default;
+    @include transition-default;
+    &::placeholder {
+      color: $color-default;
+    }
+    &:hover,
+    &:focus {
+      border-color: $color-primary;
+    }
+  }
+
+  .link-prev {
+    text-align: left;
+  }
+
+  .link-next {
+    text-align: right;
+  }
+
   .navbar {
     background-color: rgba(white, 0.85);
     a {

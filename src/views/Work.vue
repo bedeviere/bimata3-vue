@@ -7,6 +7,10 @@
       </div>
       <div class="columns work-info">
         <div class="column is-offset-3-desktop is-6">
+          <div class="work-type">
+            <label><strong>Type</strong></label>
+            <p>{{ work.type }}</p>
+          </div>
           <div class="work-role">
             <label><strong>Role</strong></label>
             <p><span v-for="(role, i) in work.role" v-bind:key="i">{{ role.name }}<span v-if="i != (work.role.length - 1)">, </span></span></p>
@@ -14,10 +18,6 @@
           <div class="work-tech">
             <label><strong>Technology</strong></label>
             <p><span v-for="(tool, i) in work.tools" v-bind:key="i">{{ tool.name }}<span v-if="i != (work.tools.length - 1)">, </span></span></p>
-          </div>
-          <div class="work-type">
-            <label><strong>Type</strong></label>
-            <p>{{ work.type }}</p>
           </div>
           <div class="work-agency" v-if="work.agency_name != '-'">
             <label><strong>Agency</strong></label>
@@ -121,11 +121,11 @@
           </div>
         </div>
         <div class="columns">
-          <div class="column is-half">
-            <h3 class="work-prev"><router-link to="/work"><i class="fas fa-long-arrow-alt-left"></i>&nbsp;Works</router-link></h3>
+          <div class="column is-half link-prev">
+            <h3><router-link to="/work"><i class="fas fa-long-arrow-alt-left"></i>&nbsp;Works</router-link></h3>
           </div>
-          <div class="column is-half">
-            <h3 class="work-next"><router-link v-bind:to="'/work/' + work.next_slug">{{ work.next_title }}&nbsp;<i class="fas fa-long-arrow-alt-right"></i></router-link></h3>
+          <div class="column is-half link-next">
+            <h3><router-link v-bind:to="'/work/' + work.next_slug">{{ work.next_title }}&nbsp;<i class="fas fa-long-arrow-alt-right"></i></router-link></h3>
           </div>
         </div>
       </article>
@@ -174,6 +174,7 @@
   }
   .work-live {
     text-align: center;
+    margin-top: 1.25em;
     .button {
       margin-left: auto;
       margin-right: auto;
@@ -185,11 +186,5 @@
     h4 {
       margin-bottom: -0.75em;
     }
-  }
-  .work-prev {
-    text-align: left;
-  }
-  .work-next {
-    text-align: right;
   }
 </style>
