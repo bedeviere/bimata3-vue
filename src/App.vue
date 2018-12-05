@@ -95,6 +95,27 @@ export default {
     opacity: 0
   }
 
+  .slide-text-enter-active,
+  .slide-text-leave-active {
+    transition-duration: 0.3s;
+    transition-property: all;
+    transition-timing-function: ease;
+  }
+
+  .slide-text-enter,
+  .slide-text-leave-to {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  .slide-text-enter-to,
+  .slide-text-leave {
+    height: auto;
+    max-height: 500px;
+    overflow: hidden;
+  }
+
   h1,
   h2,
   h3,
@@ -120,6 +141,11 @@ export default {
 
   h4 {
     font-size: 1.333rem;
+  }
+
+  hr {
+    border: none;
+    border-top: 2px solid $color-default;
   }
 
   p {
@@ -168,6 +194,16 @@ export default {
     &:focus {
       box-shadow: none;
     }
+  }
+
+  .btn-icon {
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    line-height: 36px;
+    border-radius: 100%;
+    font-size: 18px;
+    font-weight: 400;
   }
 
   .btn-default {
@@ -253,20 +289,11 @@ export default {
       margin-left: 10px;
       margin-right: 10px;
       &:first-child {
-        margin-left: -2px;
+        margin-left: 0px;
       }
       &:last-child {
-        margin-right: -2px;
+        margin-right: 0px;
       }
-    }
-    .button {
-      padding: 0;
-      width: 40px;
-      height: 40px;
-      line-height: 36px;
-      border-radius: 100%;
-      font-size: 18px;
-      font-weight: 400;
     }
   }
   
@@ -391,13 +418,11 @@ export default {
     html {
       font-size: 20px;
     }
-    ul.list-social {
-      .button {
-        width: 60px;
-        height: 60px;
-        line-height: 56px;
-        font-size: 28px;
-      }
+    .btn-icon {
+      width: 60px;
+      height: 60px;
+      line-height: 56px;
+      font-size: 28px;
     }
   }
 </style>
