@@ -12,11 +12,11 @@
           <div class="about-overview">
             <p>Hi! I'm Bimata, a front-end developer based in Jakarta, Indonesia. I develop modern, responsive websites using seasoned, practical front-end technologies such as Vue.JS and AngularJS. Besides developing, I also love to do some research on current trends of UI and UX. I focused on simplicity, modularity, and easy maintenance.</p>
             <p>My usual workflow is to start from paper and design tools, or to code from an already existing prepared design. Though, I'm also comfortable in direct designing with code.</p>
-            <transition name="slide-text" mode="out-in">
+            <transition-expand>
               <div class="about-overview-more" v-show="overviewMore">
                 <p>By day, I code and design either for a living or to learn and experiment new technologies. By night, you might find me adventuring around <a href="https://worldofwarcraft.com/en-gb/character/ravenholdt/Bedeviere" target="_blank">Azeroth</a>, slaying demons and stuff.</p>
               </div>
-            </transition>
+            </transition-expand>
             <div class="about-overview-buttons" v-on:click="overviewToggle">
               <div class="button btn-icon btn-default">
                 <i class="fas fa-fw fa-plus" v-if="!overviewMore"></i>
@@ -112,11 +112,13 @@
 </template>
 
 <script>
+import TransitionExpand from '../components/TransitionExpand.vue'
 import VueInstagram from 'vue-instagram'
 
 export default {
   name: 'about',
   components: {
+    TransitionExpand,
     VueInstagram
   },
   data() {
@@ -160,6 +162,11 @@ export default {
         background-color: $color-primary;
         border-color: $color-primary;
         color: $color-default;
+      }
+      .btn-default-o {
+        background-color: $color-default;
+        border-color: $color-default;
+        color: $color-primary;
       }
       h5 {
         color: $color-primary;

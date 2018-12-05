@@ -95,25 +95,17 @@ export default {
     opacity: 0
   }
 
-  .slide-text-enter-active,
-  .slide-text-leave-active {
-    transition-duration: 0.3s;
-    transition-property: all;
-    transition-timing-function: ease;
+  .expand-enter-active,
+  .expand-leave-active {
+    transition: 0.3s ease-in-out;
+    transition-property: opacity, height;
+    overflow: hidden;
   }
 
-  .slide-text-enter,
-  .slide-text-leave-to {
+  .expand-enter,
+  .expand-leave-to {
+    height: 0;
     opacity: 0;
-    max-height: 0;
-    overflow: hidden;
-  }
-
-  .slide-text-enter-to,
-  .slide-text-leave {
-    height: auto;
-    max-height: 500px;
-    overflow: hidden;
   }
 
   h1,
@@ -419,10 +411,10 @@ export default {
       font-size: 20px;
     }
     .btn-icon {
-      width: 60px;
-      height: 60px;
-      line-height: 56px;
-      font-size: 28px;
+      width: 50px;
+      height: 50px;
+      line-height: 46px;
+      font-size: 24px;
     }
   }
 </style>
