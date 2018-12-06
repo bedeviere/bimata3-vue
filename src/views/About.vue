@@ -158,6 +158,12 @@ export default {
       @include transition-default;
     }
     &:hover {
+      .btn-icon {
+        &::before {
+          opacity: 0;
+          transform: scale(1.8);
+        }
+      }
       .btn-default {
         background-color: $color-primary;
         border-color: $color-primary;

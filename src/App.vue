@@ -196,6 +196,45 @@ export default {
     border-radius: 100%;
     font-size: 18px;
     font-weight: 400;
+    position: relative;
+    &.btn-default {
+      &::before {
+        border-color: $color-default;
+      }
+    }
+    &.btn-default-o {
+      &::before {
+        border-color: transparent;
+      }
+    }
+    &.btn-primary {
+      &::before {
+        border-color: $color-primary;
+      }
+    }
+    &.btn-secondary {
+      &::before {
+        border-color: $color-secondary;
+      }
+    }
+    &::before {
+      content: '';
+      width: 85%;
+      height: 85%;
+      opacity: 0.8;
+      border: 2px solid;
+      border-radius: 100%;
+      transition: opacity 0.4s ease, transform 0.5s ease;
+      position: absolute;
+      top: 8%;
+      left: 8%;
+    }
+    &:hover {
+      &::before {
+        opacity: 0;
+        transform: scale(1.8);
+      }
+    }
   }
 
   .btn-default {
