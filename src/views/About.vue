@@ -15,6 +15,7 @@
             <transition-expand>
               <div class="about-overview-more" v-show="overviewMore">
                 <p>By day, I code and design either for a living or to learn and experiment new technologies. By night, you might find me adventuring around <a href="https://worldofwarcraft.com/en-gb/character/ravenholdt/Bedeviere" target="_blank">Azeroth</a>, slaying demons and stuff.</p>
+                <p>The name Bedeviere originally derived from <a href="https://en.wikipedia.org/wiki/Bedivere" target="_blank">Bedivere</a>, a famous <a href="https://en.wikipedia.org/wiki/Knights_of_the_Round_Table" target="_blank">Knight of the Round Table</a> from Arthurian Legends. I use the name for my World of Warcraft character without knowing I spelt it a bit different. Over time, I grew fond of the name and it stuck. The name becomes my primary alias ever since.</p>
               </div>
             </transition-expand>
             <div class="about-overview-buttons" v-on:click="overviewToggle">
@@ -158,7 +159,7 @@ export default {
       @include transition-default;
     }
     &:hover {
-      .btn-icon {
+      .button {
         &::before {
           opacity: 0;
           transform: scale(1.8);
