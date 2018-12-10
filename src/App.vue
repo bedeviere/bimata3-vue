@@ -358,6 +358,7 @@ export default {
 
   .input,
   .textarea {
+    font-family: 'Lato', Helvetica, Arial, sans-serif;
     color: $color-default;
     box-shadow: none;
     border-width: 2px;

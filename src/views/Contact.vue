@@ -21,53 +21,75 @@
           </ul>
         </div>
       </div>
-      <div class="columns contact-form">
-        <div class="column">
-          <div class="field">
-            <label class="label" for="contactName">Name*</label>
-            <div class="control">
-              <input id="contactName" class="input is-medium" type="text" placeholder="e.g: John Doe" v-model="contactName">
+      <form method="post" @submit.prevent="addMessage">
+        <div class="columns contact-form">
+          <div class="column">
+            <div class="field">
+              <label class="label" for="contactName">Name*</label>
+              <div class="control">
+                <input id="contactName" class="input is-medium" type="text" placeholder="e.g: John Doe" v-model="contactData.name">
+              </div>
+            </div>
+            <div class="field">
+              <label class="label" for="contactEmail">E-mail*</label>
+              <div class="control">
+                <input id="contactEmail" class="input is-medium" type="text" placeholder="e.g: johndoe@email.com" v-model="contactData.email">
+              </div>
+            </div>
+            <div class="field">
+              <label class="label" for="contactPhone">Phone (Optional)</label>
+              <div class="control">
+                <input id="contactPhone" class="input is-medium" type="text" placeholder="e.g: +628xxxxxx" v-model="contactData.phone">
+              </div>
             </div>
           </div>
-          <div class="field">
-            <label class="label" for="contactEmail">E-mail*</label>
-            <div class="control">
-              <input id="contactEmail" class="input is-medium" type="text" placeholder="e.g: johndoe@email.com" v-model="contactEmail">
-            </div>
-          </div>
-          <div class="field">
-            <label class="label" for="contactPhone">Phone (Optional)</label>
-            <div class="control">
-              <input id="contactPhone" class="input is-medium" type="text" placeholder="e.g: +628xxxxxx" v-model="contactPhone">
+          <div class="column">
+            <div class="field contact-message">
+              <label class="label" for="contactMessage">Message*</label>
+              <div class="control">
+                <textarea id="contactMessage" class="textarea has-fixed-size is-medium" placeholder="e.g: Hello there!" rows="4" v-model="contactData.message"></textarea>
+              </div>
             </div>
           </div>
         </div>
-        <div class="column">
-          <div class="field contact-message">
-            <label class="label" for="contactMessage">Message*</label>
-            <div class="control">
-              <textarea id="contactMessage" class="textarea has-fixed-size is-medium" placeholder="e.g: Hello there!" rows="4" v-model="contactMessage"></textarea>
-            </div>
-          </div>
+        <div class="buttons contact-buttons">
+          <button class="button btn-default" type="submit">Send Message</button>
         </div>
-      </div>
-      <div class="buttons contact-buttons">
-        <button class="button btn-default">Send Message</button>
-      </div>
+      </form>
     </div>
   </section>
 </template>
 
 <script>
+import axios from 'axios';
+
 export default {
   name: 'contact',
   data() {
     return {
-      contactName: '',
-      contactEmail: '',
-      contactPhone: '',
-      contactMessage: ''
+      contactData: {
+        name: '',
+        email: '',
+        phone: '',
+        message: ''
+      },
+      contactResponse: '',
+      contactError: ''
     };
+  },
+  methods: {
+    addMessage() {
+      var vm = this;
+      var apiURL = process.env.VUE_APP_ROOT_API;
+
+      axios.post(apiURL + '/addMessage', vm.contactData)
+        .then(function(res) {
+          vm.contactResponse = res;
+        })
+        .catch(function(err) {
+          vm.contactError = err.message;
+        });
+    }
   }
 }
 </script>
