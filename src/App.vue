@@ -338,8 +338,27 @@ export default {
     padding-left: 1em;
   }
 
+  .field {
+    position: relative;
+  }
+
+  .label {
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+    font-size: .75em;
+    text-transform: uppercase;
+    background-color: white;
+    color: $color-default;
+    padding-left: .5em;
+    padding-right: .5em;
+    position: absolute;
+    top: -0.75em;
+    left: 10px;
+    z-index: 1;
+  }
+
   .input,
   .textarea {
+    color: $color-default;
     box-shadow: none;
     border-width: 2px;
     border-color: $color-default;

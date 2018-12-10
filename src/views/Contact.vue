@@ -24,25 +24,29 @@
       <div class="columns contact-form">
         <div class="column">
           <div class="field">
+            <label class="label" for="contactName">Name*</label>
             <div class="control">
-              <input class="input is-medium" type="text" placeholder="Name">
+              <input id="contactName" class="input is-medium" type="text" placeholder="e.g: John Doe" v-model="contactName">
             </div>
           </div>
           <div class="field">
+            <label class="label" for="contactEmail">E-mail*</label>
             <div class="control">
-              <input class="input is-medium" type="text" placeholder="E-mail">
+              <input id="contactEmail" class="input is-medium" type="text" placeholder="e.g: johndoe@email.com" v-model="contactEmail">
             </div>
           </div>
           <div class="field">
+            <label class="label" for="contactPhone">Phone (Optional)</label>
             <div class="control">
-              <input class="input is-medium" type="text" placeholder="Phone (optional)">
+              <input id="contactPhone" class="input is-medium" type="text" placeholder="e.g: +628xxxxxx" v-model="contactPhone">
             </div>
           </div>
         </div>
         <div class="column">
           <div class="field contact-message">
+            <label class="label" for="contactMessage">Message*</label>
             <div class="control">
-              <textarea class="textarea has-fixed-size is-medium" placeholder="Message" rows="4"></textarea>
+              <textarea id="contactMessage" class="textarea has-fixed-size is-medium" placeholder="e.g: Hello there!" rows="4" v-model="contactMessage"></textarea>
             </div>
           </div>
         </div>
@@ -56,7 +60,15 @@
 
 <script>
 export default {
-  name: 'contact'
+  name: 'contact',
+  data() {
+    return {
+      contactName: '',
+      contactEmail: '',
+      contactPhone: '',
+      contactMessage: ''
+    };
+  }
 }
 </script>
 
