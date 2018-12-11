@@ -183,6 +183,20 @@ export default {
     text-transform: uppercase;
     position: relative;
     @include transition-default;
+    &[disabled] {
+      background-color: $color-disabled;
+      border-color: $color-disabled;
+      color: $color-default;
+      &:hover,
+      &:focus {
+        background-color: $color-disabled;
+        border-color: $color-disabled;
+        color: $color-default;
+      }
+      &::before {
+        display: none;
+      }
+    }
     &:hover,
     &:focus {
       box-shadow: none;
