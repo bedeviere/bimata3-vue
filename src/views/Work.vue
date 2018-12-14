@@ -19,10 +19,6 @@
             <label><strong>Technology</strong></label>
             <p><span v-for="(tool, i) in work.tools" v-bind:key="i">{{ tool.name }}<span v-if="i != (work.tools.length - 1)">, </span></span></p>
           </div>
-          <div class="work-agency" v-if="work.agency_name != '-'">
-            <label><strong>Agency</strong></label>
-            <a v-bind:href="work.agency_link">{{ work.agency_name }}</a>
-          </div>
           <div class="buttons work-live">
             <a v-bind:href="work.link" target="_blank" class="button btn-default">See It Live&nbsp;<i class="fas fa-external-link-square-alt"></i></a>
           </div>
@@ -47,15 +43,15 @@
           <div class="column is-offset-3-desktop is-6" v-if="article.type == 'quote'">
             <blockquote class="quote" v-html="article.content"></blockquote>
           </div>
-          <div class="column">
-            <div class="image work-image" v-if="article.type == 'image-large'">
-              <img v-bind:alt="article.label" v-bind:src="'http://cdn.bedeviere.com/work' + article.content">
+          <div class="column" v-if="article.type == 'image-large'">
+            <div class="image work-image">
+              <img v-bind:alt="article.alt" v-bind:src="'http://cdn.bedeviere.com/work' + article.content">
               <label class="image-info" v-html="article.label"></label>
             </div>
           </div>
-          <div class="column is-offset-3-desktop is-6">
-            <div class="image work-image" v-if="article.type == 'image-small'">
-              <img v-bind:alt="article.label" v-bind:src="'http://cdn.bedeviere.com/work' + article.content">
+          <div class="column is-offset-3-desktop is-6" v-if="article.type == 'image-small'">
+            <div class="image work-image">
+              <img v-bind:alt="article.alt" v-bind:src="'http://cdn.bedeviere.com/work' + article.content">
               <label class="image-info" v-html="article.label"></label>
             </div>
           </div>
