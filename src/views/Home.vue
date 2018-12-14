@@ -36,7 +36,19 @@ export default {
           title: 'Front End Developer',
           type: 'text',
           href: '',
-          duration: 16000
+          duration: 12000
+        },
+        {
+          title: 'Aspiring UX Designer',
+          type: 'text',
+          href: '',
+          duration: 12000
+        },
+        {
+          title: 'Hobbyist Photographer',
+          type: 'text',
+          href: '',
+          duration: 8000
         },
         {
           title: 'Azeroth Adventurer',
@@ -60,12 +72,6 @@ export default {
           title: 'Occasional Writer',
           type: 'link',
           href: 'http://storywork.bedeviere.com',
-          duration: 8000
-        },
-        {
-          title: 'Hobbyist Photographer',
-          type: 'text',
-          href: '',
           duration: 8000
         },
         {
