@@ -165,6 +165,10 @@ export default {
     color: inherit;
   }
 
+  .fab {
+    font-weight: 400;
+  }
+
   .image {
     text-align: center;
     .image-info {
@@ -227,7 +231,6 @@ export default {
     line-height: 36px;
     border-radius: 100%;
     font-size: 18px;
-    font-weight: 400;
     position: relative;
     &:hover,
     &:focus {
