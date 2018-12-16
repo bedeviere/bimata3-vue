@@ -19,11 +19,9 @@
         </ul>
       </nav>
     </header>
-    <main>
-      <transition name="fade" mode="out-in">
-        <router-view v-bind:key="$route.fullPath"></router-view>
-      </transition>
-    </main>
+    <transition name="fade" mode="out-in">
+      <router-view v-bind:key="$route.fullPath"></router-view>
+    </transition>
     <footer>&copy; 2018 Bimata Prathama</footer>
   </div>
 </template>

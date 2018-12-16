@@ -1,74 +1,76 @@
 <template>
-  <section class="contact section">
-    <div class="container">
-      <h1>Contact</h1>
-      <div class="contact-greeting">
-        <p>
-          Have a cool project in mind, and think I can help you?<br>
-          Feel free to email me at <a href="mailto:bimata.prathama@gmail.com">bimata.prathama@gmail.com</a>
-        </p>
-      </div>
-      <div class="columns">
-        <div class="column contact-location">
-          <h3><i class="fas fa-map-pin"></i> Jakarta, ID</h3>
-        </div>
-        <div class="column contact-social">
-          <ul class="list-social">
-            <li><a class="button btn-icon btn-default" href="http://twitter.com/bedeviere" target="_blank"><i class="fab fa-fw fa-twitter"></i></a></li>
-            <li><a class="button btn-icon btn-default" href="http://linkedin.com/in/bedeviere" target="_blank"><i class="fab fa-fw fa-linkedin-in"></i></a></li>
-            <li><a class="button btn-icon btn-default" href="http://github.com/bedeviere" target="_blank"><i class="fab fa-fw fa-github"></i></a></li>
-            <li><a class="button btn-icon btn-default" href="http://codepen.com/bedeviere" target="_blank"><i class="fab fa-fw fa-codepen"></i></a></li>
-          </ul>
-        </div>
-      </div>
-      <form class="contact-form" method="post" @submit.prevent="addMessage">
-        <div class="columns">
-          <div class="column">
-            <div class="field">
-              <label class="label" for="contactName">Name*</label>
-              <div class="control">
-                <input id="contactName" class="input is-medium" type="text" placeholder="e.g: John Doe" v-model="contactData.name" v-bind:class="{ 'is-danger': contactError.name.length != 0 }" v-bind:readonly="contactProcess">
-              </div>
-              <p class="help is-danger" v-if="contactError.name.length != 0">{{ contactError.name }}</p>
-            </div>
-          </div>
-          <div class="column">
-            <div class="field">
-              <label class="label" for="contactEmail">Email*</label>
-              <div class="control">
-                <input id="contactEmail" class="input is-medium" type="text" placeholder="e.g: johndoe@email.com" v-model="contactData.email" v-bind:class="{ 'is-danger': contactError.email.length != 0 }" v-bind:readonly="contactProcess">
-              </div>
-              <p class="help is-danger" v-if="contactError.email.length != 0">{{ contactError.email }}</p>
-            </div>
-          </div>
-          <div class="column">
-            <div class="field">
-              <label class="label" for="contactPhone">Phone (Optional)</label>
-              <div class="control">
-                <input id="contactPhone" class="input is-medium" type="text" placeholder="e.g: +628xxxxxx" v-model="contactData.phone" v-bind:readonly="contactProcess">
-              </div>
-            </div>
-          </div>
+  <main class="contact">
+    <section class="section">
+      <div class="container">
+        <h1>Contact</h1>
+        <div class="contact-greeting">
+          <p>
+            Have a cool project in mind, and think I can help you?<br>
+            Feel free to email me at <a href="mailto:bimata.prathama@gmail.com">bimata.prathama@gmail.com</a>
+          </p>
         </div>
         <div class="columns">
-          <div class="column">
-            <div class="field contact-message">
-              <label class="label" for="contactMessage">Message*</label>
-              <div class="control">
-                <textarea id="contactMessage" class="textarea has-fixed-size is-medium" placeholder="e.g: Hello there!" rows="4" v-model="contactData.message" v-bind:class="{ 'is-danger': contactError.message.length != 0 }" v-bind:readonly="contactProcess"></textarea>
-              </div>
-              <p class="help is-danger" v-if="contactError.message.length != 0">{{ contactError.message }}</p>
-            </div>
+          <div class="column contact-location">
+            <h3><i class="fas fa-map-pin"></i> Jakarta, ID</h3>
+          </div>
+          <div class="column contact-social">
+            <ul class="list-social">
+              <li><a class="button btn-icon btn-default" href="http://twitter.com/bedeviere" target="_blank"><i class="fab fa-fw fa-twitter"></i></a></li>
+              <li><a class="button btn-icon btn-default" href="http://linkedin.com/in/bedeviere" target="_blank"><i class="fab fa-fw fa-linkedin-in"></i></a></li>
+              <li><a class="button btn-icon btn-default" href="http://github.com/bedeviere" target="_blank"><i class="fab fa-fw fa-github"></i></a></li>
+              <li><a class="button btn-icon btn-default" href="http://codepen.com/bedeviere" target="_blank"><i class="fab fa-fw fa-codepen"></i></a></li>
+            </ul>
           </div>
         </div>
-        <div class="buttons contact-buttons">
-          <button class="button btn-default" type="submit" v-bind:disabled="contactProcess" v-html="contactButton"></button>
-        </div>
-        <p class="help is-success contact-success">{{ contactSuccess }}</p>
-      </form>
-    </div>
-    <div class="error">{{ contactError.catch }}</div>
-  </section>
+        <form class="contact-form" method="post" @submit.prevent="addMessage">
+          <div class="columns">
+            <div class="column">
+              <div class="field">
+                <label class="label" for="contactName">Name*</label>
+                <div class="control">
+                  <input id="contactName" class="input is-medium" type="text" placeholder="e.g: John Doe" v-model="contactData.name" v-bind:class="{ 'is-danger': contactError.name.length != 0 }" v-bind:readonly="contactProcess">
+                </div>
+                <p class="help is-danger" v-if="contactError.name.length != 0">{{ contactError.name }}</p>
+              </div>
+            </div>
+            <div class="column">
+              <div class="field">
+                <label class="label" for="contactEmail">Email*</label>
+                <div class="control">
+                  <input id="contactEmail" class="input is-medium" type="text" placeholder="e.g: johndoe@email.com" v-model="contactData.email" v-bind:class="{ 'is-danger': contactError.email.length != 0 }" v-bind:readonly="contactProcess">
+                </div>
+                <p class="help is-danger" v-if="contactError.email.length != 0">{{ contactError.email }}</p>
+              </div>
+            </div>
+            <div class="column">
+              <div class="field">
+                <label class="label" for="contactPhone">Phone (Optional)</label>
+                <div class="control">
+                  <input id="contactPhone" class="input is-medium" type="text" placeholder="e.g: +628xxxxxx" v-model="contactData.phone" v-bind:readonly="contactProcess">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="columns">
+            <div class="column">
+              <div class="field contact-message">
+                <label class="label" for="contactMessage">Message*</label>
+                <div class="control">
+                  <textarea id="contactMessage" class="textarea has-fixed-size is-medium" placeholder="e.g: Hello there!" rows="4" v-model="contactData.message" v-bind:class="{ 'is-danger': contactError.message.length != 0 }" v-bind:readonly="contactProcess"></textarea>
+                </div>
+                <p class="help is-danger" v-if="contactError.message.length != 0">{{ contactError.message }}</p>
+              </div>
+            </div>
+          </div>
+          <div class="buttons contact-buttons">
+            <button class="button btn-default" type="submit" v-bind:disabled="contactProcess" v-html="contactButton"></button>
+          </div>
+          <p class="help is-success contact-success">{{ contactSuccess }}</p>
+        </form>
+      </div>
+      <div class="error">{{ contactError.catch }}</div>
+    </section>
+  </main>
 </template>
 
 <script>

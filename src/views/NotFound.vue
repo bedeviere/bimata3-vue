@@ -1,16 +1,18 @@
 <template>
-  <section class="error404 hero is-fullheight single">
-    <div class="pattern">
-      <canvas id="canvas"></canvas>
-    </div>
-    <div class="hero-body">
-      <div class="container">
-        <h1>404</h1>
-        <p>This is not the page you're looking for</p>
-        <router-link to="/" class="button btn-default">Move Along</router-link>
+  <main class="error404">
+    <section class="hero is-fullheight single">
+      <div class="pattern">
+        <canvas id="canvas"></canvas>
       </div>
-    </div>
-  </section>
+      <div class="hero-body">
+        <div class="container">
+          <h1>404</h1>
+          <p>This is not the page you're looking for</p>
+          <router-link to="/" class="button btn-default">Move Along</router-link>
+        </div>
+      </div>
+    </section>
+  </main>
 </template>
 
 <script>

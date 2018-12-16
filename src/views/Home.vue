@@ -1,23 +1,25 @@
 <template>
-  <section class="home hero is-fullheight single">
-    <div class="pattern">
-      <canvas id="canvas"></canvas>
-    </div>
-    <div class="hero-body">
-      <div class="container">
-        <h1>Bimata Prathama</h1>
-        <div class="home-role">
-          <h2>
-            <span v-if="roleType == 'text'">{{ roleTitle }}</span>
-            <a v-else-if="roleType == 'link'" v-bind:href="roleHref" target="_blank"><span>{{ roleTitle }}</span></a>
-          </h2>
-        </div>
-        <div class="buttons">
-          <router-link to="/work" class="button btn-default">See Case Studies&nbsp;<i class="fas fa-long-arrow-alt-right"></i></router-link>
+  <main class="home">
+    <section class="hero is-fullheight single">
+      <div class="pattern">
+        <canvas id="canvas"></canvas>
+      </div>
+      <div class="hero-body">
+        <div class="container">
+          <h1>Bimata Prathama</h1>
+          <div class="home-role">
+            <h2>
+              <span v-if="roleType == 'text'">{{ roleTitle }}</span>
+              <a v-else-if="roleType == 'link'" v-bind:href="roleHref" target="_blank"><span>{{ roleTitle }}</span></a>
+            </h2>
+          </div>
+          <div class="buttons">
+            <router-link to="/work" class="button btn-default">See Case Studies&nbsp;<i class="fas fa-long-arrow-alt-right"></i></router-link>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 </template>
 
 <script>
