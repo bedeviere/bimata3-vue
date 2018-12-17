@@ -47,17 +47,17 @@
             <div class="column" v-if="article.type == 'image-large'">
               <div class="image work-image">
                 <img v-bind:alt="article.alt" v-bind:src="'http://cdn.bedeviere.com/work' + article.content">
-                <label class="image-info" v-html="article.label"></label>
+                <label class="image-info" v-html="article.label" v-if="article.label != '-'"></label>
               </div>
             </div>
             <div class="column is-offset-3-desktop is-6" v-if="article.type == 'image-small'">
               <div class="image work-image">
                 <img v-bind:alt="article.alt" v-bind:src="'http://cdn.bedeviere.com/work' + article.content">
-                <label class="image-info" v-html="article.label"></label>
+                <label class="image-info" v-html="article.label" v-if="article.label != '-'"></label>
               </div>
             </div>
           </div>
-          <div class="columns">
+          <!-- <div class="columns">
             <div class="column is-offset-3-desktop is-6">
               <p>Space: The final frontier. These are the voyages of the Starship, Enterprise. Its five-year mission: To explore strange new worlds, to seek out new life and new civilizations, to boldly go where no man has gone before.</p>
             </div>
@@ -116,16 +116,16 @@
             <div class="column is-offset-3-desktop is-6">
               <p>It suddenly struck me that that <em>tiny pea, pretty and blue</em>, was the <strong>Earth</strong>. I put up my thumb and shut one eye, and my thumb blotted out the planet Earth. <a>I didn’t feel like a giant</a>. I felt very, very small.</p>
             </div>
-          </div>
-          <div class="columns">
-            <div class="column is-half link-prev">
-              <h3><router-link to="/work"><i class="fas fa-long-arrow-alt-left"></i>&nbsp;Works</router-link></h3>
-            </div>
-            <div class="column is-half link-next">
-              <h3><router-link v-bind:to="'/work/' + work.next_slug">{{ work.next_title }}&nbsp;<i class="fas fa-long-arrow-alt-right"></i></router-link></h3>
-            </div>
-          </div>
+          </div> -->
         </article>
+        <div class="columns">
+          <div class="column is-half link-prev">
+            <h3><router-link to="/work"><i class="fas fa-long-arrow-alt-left"></i>&nbsp;Works</router-link></h3>
+          </div>
+          <div class="column is-half link-next">
+            <h3><router-link v-bind:to="'/work/' + work.next_slug">{{ work.next_title }}&nbsp;<i class="fas fa-long-arrow-alt-right"></i></router-link></h3>
+          </div>
+        </div>
       </div>
       <div class="error">{{ workError }}</div>
     </section>

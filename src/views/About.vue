@@ -106,6 +106,14 @@
             <div class="insta-alert"> {{ props.error.error_message }} </div>
           </template>
         </vue-instagram>
+        <div class="columns">
+          <div class="column is-half">
+            <h4>About this Website</h4>
+            <p>This site has been designed and built by hand using <a href="https://bulma.io/" target="_blank">Bulma CSS Framework</a> as the skeleton. It's rendered and transitioned through <a href="https://vuejs.org/" target="_blank">Vue.JS</a>.</p>
+            <p>The CSS is written in <a href="https://sass-lang.com/">Sass</a>, with <strong>mobile first approach</strong> and with <a href="https://type-scale.com/" target="_blank">Perfect Fourth scale</a> for a <a href="https://alistapart.com/article/more-meaningful-typography" target="_blank">more meaningful typhography</a>.</p>
+            <p>The color scheme of this site is heavily inspired by <a href="https://wow.gamepedia.com/Crest_of_the_Alliance">Alliance Crest</a>.</p>
+          </div>
+        </div>
         <div class="link-next">
           <h3><router-link to="/work">Works&nbsp;<i class="fas fa-long-arrow-alt-right"></i></router-link></h3>
         </div>
