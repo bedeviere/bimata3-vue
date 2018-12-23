@@ -41,6 +41,9 @@
 
   export default {
     name: 'works',
+    metaInfo: {
+      title: 'Works - Bimata Prathama, Front End Developer'
+    },
     data() {
       return {
         workList: [],

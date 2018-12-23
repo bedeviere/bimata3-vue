@@ -78,6 +78,9 @@ import axios from 'axios';
 
 export default {
   name: 'contact',
+  metaInfo: {
+    title: 'Contact - Bimata Prathama, Front End Developer'
+  },
   data() {
     return {
       contactData: {

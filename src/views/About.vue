@@ -128,6 +128,9 @@ import VueInstagram from 'vue-instagram'
 
 export default {
   name: 'about',
+  metaInfo: {
+    title: 'About - Bimata Prathama, Front End Developer'
+  },
   components: {
     TransitionExpand,
     VueInstagram

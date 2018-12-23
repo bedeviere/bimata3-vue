@@ -29,6 +29,9 @@
 <script>
 export default {
   name: 'app',
+  metaInfo: {
+    title: 'Bimata Prathama, Front End Developer'
+  },
   data() {
     return {
       navbarMenu: false

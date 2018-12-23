@@ -143,6 +143,11 @@
 
   export default {
     name: 'work',
+    metaInfo() {
+      return {
+        title: this.work.title + ' - Bimata Prathama, Front End Developer'
+      }
+    },
     data() {
       return {
         work: [],
