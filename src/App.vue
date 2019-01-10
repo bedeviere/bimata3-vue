@@ -308,6 +308,12 @@ export default {
     }
   }
 
+  .image-centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .quote {
     font-style: italic;
     font-size: 1.333em;

@@ -54,7 +54,7 @@
                 </div>
               </div>
               <div class="column">
-                <div calss="about-tech">
+                <div class="about-tech">
                   <h4>Tech Stack</h4>
                   <ul class="list-bullet">
                     <li>HTML5</li>
@@ -70,7 +70,7 @@
           <div class="column">
             <div class="columns">
               <div class="column">
-                <div calss="about-design">
+                <div class="about-design">
                   <h4>Design Tools</h4>
                   <ul class="list-bullet">
                     <li>Adobe Illustrator</li>
@@ -107,11 +107,14 @@
           </template>
         </vue-instagram>
         <div class="columns">
-          <div class="column is-half">
+          <div class="column">
             <h4>About this Website</h4>
             <p>This site has been designed and built using <a href="https://bulma.io/" target="_blank">Bulma CSS Framework</a> as the skeleton, with some customizations along the way. It's rendered and transitioned through <a href="https://vuejs.org/" target="_blank">Vue.JS</a>.</p>
             <p>The CSS is written in <a href="https://sass-lang.com/" target="_blank">Sass</a>, with <strong>mobile first approach</strong> and with <a href="https://type-scale.com/" target="_blank">Perfect Fourth scale</a> for a <a href="https://alistapart.com/article/more-meaningful-typography" target="_blank">more meaningful typhography</a>.</p>
             <p>The color scheme of this site is heavily inspired by <a href="https://wow.gamepedia.com/Crest_of_the_Alliance" target="_blank">Alliance Crest</a>.</p>
+          </div>
+          <div class="column">
+            <img class="image-centered" src="../assets/squares.jpg" alt="navy gold square">
           </div>
         </div>
         <div class="link-next">
