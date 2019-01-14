@@ -406,7 +406,7 @@ export default {
   }
 
   .navbar {
-    background-color: rgba(white, 0.85);
+    background-color: rgba(white, 0.95);
     a {
       &:hover,
       &:focus {
@@ -446,8 +446,28 @@ export default {
 
   .navbar-burger {
     color: $color-default;
+    span {
+      height: 2px;
+      width: 20px;
+      &:nth-child(1) {
+        top: calc(50% - 8px);
+      }
+      &:nth-child(3) {
+        top: calc(50% + 6px);
+      }
+    }
     &:hover {
       color: $color-default;
+    }
+    &.is-active {
+      span {
+        &:nth-child(1) {
+          transform: translateY(7px) rotate(45deg);
+        }
+        &:nth-child(3) {
+          transform: translateY(-7px) rotate(-45deg);
+        }
+      }
     }
   }
 
@@ -478,7 +498,7 @@ export default {
       font-size: 2em;
     }
     .navbar-menu {
-      background-color: rgba(white, 0.85);
+      background-color: rgba(white, 0.95);
       min-height: calc(100vh - 3.25rem - 60px);
       opacity: 0;
       visibility: hidden;
