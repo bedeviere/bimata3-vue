@@ -85,7 +85,7 @@
                   <ul class="list-bullet">
                     <li><a href="https://pinterest.com/bedeviere/for-the-alliance/" target="_blank">For the Alliance!</a></li>
                     <li><a href="http://instagram.com/bimatagunpla" target="_blank">Gunpla</a></li>
-                    <li><a href="https://acecombat.fandom.com/wiki/Su-33_Flanker-D" target="_blank">Su-33</a></li>
+                    <li><a href="https://acecombat.fandom.com/wiki/Su-35S_Flanker-E" target="_blank">Su-35S</a></li>
                     <li><a href="https://youtu.be/F64yFFnZfkI" target="_blank">Yorushika - "Say It."</a></li>
                     <li><a href="https://pinterest.com/bedeviere/troopers/" target="_blank">Troopers</a></li>
                   </ul>
