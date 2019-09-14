@@ -11,11 +11,11 @@
           </div>
           <div class="column">
             <div class="about-overview">
-              <p>Hi! I'm <strong>Bimata</strong>, a <strong>front-end developer</strong> based in Jakarta, Indonesia. I develop modern, responsive websites using seasoned, practical front-end technologies such as <strong>Vue.JS</strong> and <strong>AngularJS</strong>. Besides developing, I also love to do some research on current trends of <strong>UI and UX</strong>. I focused on <strong>simplicity</strong>, <strong>modularity</strong>, and <strong>easy maintenance</strong>.</p>
+              <p>Hi! I'm <strong>Bimata</strong>, a <strong>front-end developer</strong> based in Berkeley, CA. I develop modern, responsive websites using seasoned, practical front-end technologies such as <strong>Vue.JS</strong> and <strong>AngularJS</strong>. Besides developing, I also love to do some research on current trends of <strong>UI and UX</strong>. I focused on <strong>simplicity</strong>, <strong>modularity</strong>, and <strong>easy maintenance</strong>.</p>
               <p>My usual workflow is to start from paper and design tools, or to code from an already existing prepared design. Though, I'm also comfortable in direct designing with code.</p>
               <transition-expand>
                 <div class="about-overview-more" v-show="overviewMore">
-                  <p>By day, I code and design either for a living or to learn and experiment new technologies. By night, you might find me adventuring around <a href="https://worldofwarcraft.com/en-gb/character/ravenholdt/Bedeviere" target="_blank">Azeroth</a>, slaying demons and stuff.</p>
+                  <p>By day, I design and code either for a living or to learn and experiment new technologies. By night, you might find me adventuring around <a href="https://worldofwarcraft.com/en-gb/character/ravenholdt/Bedeviere" target="_blank">Azeroth</a>, slaying demons and stuff.</p>
                   <p>The name <strong>Bedeviere</strong> originally derived from <a href="https://en.wikipedia.org/wiki/Bedivere" target="_blank">Bedivere</a>, a famous <a href="https://en.wikipedia.org/wiki/Knights_of_the_Round_Table" target="_blank">Knight of the Round Table</a> from <strong>Arthurian Legends</strong>. I use the name for my World of Warcraft character without knowing I spelt it a bit different. Over time, I grew fond of the name and it stuck. The name becomes my primary alias ever since.</p>
                 </div>
               </transition-expand>
