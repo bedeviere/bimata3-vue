@@ -35,13 +35,19 @@ export default {
       roleDuration: 8000,
       roles: [
         {
-          title: 'Front End Developer',
+          title: 'Designer // Developer',
           type: 'text',
           href: '',
           duration: 12000
         },
         {
           title: 'Aspiring UX Designer',
+          type: 'text',
+          href: '',
+          duration: 12000
+        },
+        {
+          title: 'Front End Developer',
           type: 'text',
           href: '',
           duration: 12000
