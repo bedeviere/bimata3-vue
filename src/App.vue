@@ -146,8 +146,10 @@ export default {
   }
 
   a {
-    color: $color-primary;
+    color: $color-default;
+    font-weight: 700;
     position: relative;
+    box-shadow:  0 -1px 0 0 white inset, 0 -0.55em 0 0 $color-primary inset;
     @include transition-default;
     span {
       &::selection {
@@ -160,7 +162,7 @@ export default {
     &:hover,
     &:focus {
       color: $color-primary;
-      box-shadow:  0 -1px 0 0 white inset, 0 -0.15em 0 0 $color-primary inset;
+      box-shadow:  0 -1px 0 0 white inset, 0 0em 0 0 $color-primary inset;
     }
   }
 
@@ -408,6 +410,7 @@ export default {
   .navbar {
     background-color: rgba(white, 0.95);
     a {
+      box-shadow: none;
       &:hover,
       &:focus {
         box-shadow: none;
