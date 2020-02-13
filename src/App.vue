@@ -174,6 +174,13 @@ export default {
     font-weight: 400;
   }
 
+  .columns {
+    &.is-centered {
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
   .image {
     text-align: center;
     .image-info {

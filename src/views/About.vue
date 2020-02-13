@@ -95,7 +95,7 @@
           </div>
         </div>
         <h4>Life in Photos</h4>
-        <vue-instagram v-bind:token="token" v-bind:count="12" class="columns is-multiline is-mobile">
+        <vue-instagram v-bind:token="token" v-bind:count="12" class="columns is-multiline is-mobile is-centered">
           <template slot="feeds" slot-scope="props">
             <div class="column is-3-desktop is-4-tablet is-6-mobile">
               <a v-bind:href="props.feed.link" class="image" target="_blank">
