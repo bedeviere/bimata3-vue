@@ -17,7 +17,7 @@
               <p><span v-for="(role, i) in work.role" v-bind:key="i">{{ role.name }}<span v-if="i != (work.role.length - 1)">, </span></span></p>
             </div>
             <div class="work-tech">
-              <label><strong>Technology</strong></label>
+              <label><strong>Tools</strong></label>
               <p><span v-for="(tool, i) in work.tools" v-bind:key="i">{{ tool.name }}<span v-if="i != (work.tools.length - 1)">, </span></span></p>
             </div>
             <div class="buttons work-live">
