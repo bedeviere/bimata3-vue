@@ -99,7 +99,7 @@
             </div> 
           </div>
         </div>
-        <h4>Life in Photos</h4>
+        <!-- <h4>Life in Photos</h4>
         <vue-instagram v-bind:token="token" v-bind:count="12" class="columns is-multiline is-mobile is-centered">
           <template slot="feeds" slot-scope="props">
             <div class="column is-3-desktop is-4-tablet is-6-mobile">
@@ -111,7 +111,7 @@
           <template slot="error" slot-scope="props">
             <div class="insta-alert"> {{ props.error.error_message }} </div>
           </template>
-        </vue-instagram>
+        </vue-instagram> -->
         <div class="columns">
           <div class="column">
             <h4>About this Website</h4>
@@ -133,7 +133,7 @@
 
 <script>
 import TransitionExpand from '../components/TransitionExpand.vue'
-import VueInstagram from 'vue-instagram'
+// import VueInstagram from 'vue-instagram'
 
 export default {
   name: 'about',
@@ -141,14 +141,14 @@ export default {
     title: 'About - Bimata Prathama, Front End Developer'
   },
   components: {
-    TransitionExpand,
-    VueInstagram
+    TransitionExpand
+    // VueInstagram
   },
   data() {
     return {
       overviewMore: false,
-      overviewMoreCopy: 'More about me..',
-      token: '178557724.1677ed0.a09bcf1811c348cabeccf098cff2d079'
+      overviewMoreCopy: 'More about me..'
+      // token: '178557724.1677ed0.a09bcf1811c348cabeccf098cff2d079'
     };
   },
   methods: {

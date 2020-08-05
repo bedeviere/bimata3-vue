@@ -30,7 +30,7 @@
 export default {
   name: 'app',
   metaInfo: {
-    title: 'Bimata Prathama, Front End Developer'
+    title: 'Bimata Prathama, UX/UI Designer'
   },
   data() {
     return {

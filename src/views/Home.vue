@@ -41,7 +41,7 @@ export default {
           duration: 12000
         },
         {
-          title: 'Aspiring UX Designer',
+          title: 'UX/UI Designer',
           type: 'text',
           href: '',
           duration: 12000
