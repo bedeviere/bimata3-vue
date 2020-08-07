@@ -145,7 +145,7 @@
     name: 'work',
     metaInfo() {
       return {
-        title: this.work.title + ' - Bimata Prathama, Front End Developer'
+        title: this.work.title + ' - Bimata Prathama, UX/UI Designer'
       }
     },
     data() {
