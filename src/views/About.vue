@@ -138,7 +138,7 @@ import TransitionExpand from '../components/TransitionExpand.vue'
 export default {
   name: 'about',
   metaInfo: {
-    title: 'About - Bimata Prathama, Front End Developer'
+    title: 'About - Bimata Prathama, UI/UX Designer'
   },
   components: {
     TransitionExpand
