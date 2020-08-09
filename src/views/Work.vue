@@ -42,6 +42,12 @@
                 <li v-for="(list, i) in article.list" v-bind:key="i" v-html="list.content"></li>
               </ul>
             </div>
+            <div class="column is-offset-3-desktop is-6" v-if="article.type == 'ol'">
+              <p v-html="article.content"></p>
+              <ol class="list-number">
+                <li v-for="(list, i) in article.list" v-bind:key="i" v-html="list.content"></li>
+              </ol>
+            </div>
             <div class="column is-offset-3-desktop is-6" v-if="article.type == 'highlight'">
               <div class="message highlight-default">
                 <div class="message-body" v-html="article.content"></div>

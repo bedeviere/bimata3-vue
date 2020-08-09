@@ -11,8 +11,8 @@
           </div>
           <div class="column">
             <div class="about-overview">
-              <p>Hi! I'm <strong>Bimata</strong>, a <strong>UX/UI designer</strong> based in Berkeley, CA. I create design prototypes and conduct user research. I focused on <strong>simplicity</strong>, <strong>modularity</strong>, and <strong>easy maintenance</strong>.</p>
-              <p>I’m a designer transitioning from front end engineer. My previous engineer background helps me understand the limitation and possibilities of current web technology. I recently completed Professional Diploma Program in UX/UI Design at UC Berkeley Extension.</p>
+              <p>Hi! I'm <strong>Bimata</strong>, a <strong>UX/UI designer</strong> based in Berkeley, CA. I create <strong>design prototypes</strong> and conduct <strong>user research</strong>. I focused on <strong>simplicity</strong>, <strong>modularity</strong>, and <strong>easy maintenance</strong>.</p>
+              <p>I’m a designer transitioning from a <strong>front-end engineer</strong> background. My previous engineer background helps me understand the <strong>limitations</strong> and <strong>possibilities</strong> of current web technology. I recently completed <strong>Professional Diploma Program in UX/UI Design</strong> at <strong>UC Berkeley Extension</strong>.</p>
               <transition-expand>
                 <div class="about-overview-more" v-show="overviewMore">
                   <p>By day, I design and code either for a living or to learn and experiment new design tools. By night, you might find me adventuring around <a href="https://worldofwarcraft.com/en-gb/character/ravenholdt/Bedeviere" target="_blank">Azeroth</a>, slaying demons and stuff.</p>
@@ -48,7 +48,6 @@
                   <h4>What I Do</h4>
                   <ul class="list-bullet">
                     <li>UX/UI Design</li>
-                    <li>Protoyping</li>
                     <li>User Research</li>
                     <li>Mobile First Web Design</li>
                     <li>Front-End Development</li>

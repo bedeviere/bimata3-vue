@@ -13,6 +13,11 @@
               <a v-else-if="roleType == 'link'" v-bind:href="roleHref" target="_blank"><span>{{ roleTitle }}</span></a>
             </h2>
           </div>
+          <div class="home-summary columns">
+            <div class="column is-two-thirds">
+              <p>I create <strong>design prototypes</strong> and conduct <strong>user research</strong>. I’m a designer transitioning from a <strong>front-end engineer</strong> background. I recently completed <strong>Professional Diploma Program in UX/UI Design</strong> at <strong>UC Berkeley Extension</strong>.</p>
+            </div>
+          </div>
           <div class="buttons">
             <router-link to="/work" class="button btn-default">See Case Studies&nbsp;<i class="fas fa-long-arrow-alt-right"></i></router-link>
           </div>
@@ -490,6 +495,10 @@ export default {
         animation-iteration-count: infinite;
       }
     }
+  }
+
+  .home-summary {
+    margin-bottom: 1rem;
   }
 
   @keyframes typing {

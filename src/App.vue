@@ -371,6 +371,11 @@ export default {
     padding-left: 1em;
   }
 
+  ol.list-number {
+    list-style: decimal;
+    padding-left: 1em;
+  }
+
   .field {
     position: relative;
   }
