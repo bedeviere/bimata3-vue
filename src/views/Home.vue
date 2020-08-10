@@ -15,7 +15,7 @@
           </div>
           <div class="home-summary columns">
             <div class="column is-two-thirds">
-              <p>I create <strong>design prototypes</strong> and conduct <strong>user research</strong>. I’m a designer transitioning from a <strong>front-end engineer</strong> background. I recently completed <strong>Professional Diploma Program in UX/UI Design</strong> at <strong>UC Berkeley Extension</strong>.</p>
+              <p>I create <strong>design prototypes</strong> and conduct <strong>user research</strong>. I’m a designer transitioning from a <strong>front-end developer</strong> background. I recently completed <strong>Professional Diploma Program in UX/UI Design</strong> at <strong>UC Berkeley Extension</strong>.</p>
             </div>
           </div>
           <div class="buttons">

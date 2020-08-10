@@ -28,7 +28,7 @@
               <div class="field">
                 <label class="label" for="contactName">Name*</label>
                 <div class="control">
-                  <input id="contactName" class="input is-medium" type="text" placeholder="e.g: John Doe" v-model="contactData.name" v-bind:class="{ 'is-danger': contactError.name.length != 0 }" v-bind:readonly="contactProcess">
+                  <input id="contactName" class="input is-medium" type="text" v-model="contactData.name" v-bind:class="{ 'is-danger': contactError.name.length != 0 }" v-bind:readonly="contactProcess">
                 </div>
                 <p class="help is-danger" v-if="contactError.name.length != 0">{{ contactError.name }}</p>
               </div>
@@ -37,7 +37,7 @@
               <div class="field">
                 <label class="label" for="contactEmail">Email*</label>
                 <div class="control">
-                  <input id="contactEmail" class="input is-medium" type="text" placeholder="e.g: johndoe@email.com" v-model="contactData.email" v-bind:class="{ 'is-danger': contactError.email.length != 0 }" v-bind:readonly="contactProcess">
+                  <input id="contactEmail" class="input is-medium" type="text" v-model="contactData.email" v-bind:class="{ 'is-danger': contactError.email.length != 0 }" v-bind:readonly="contactProcess">
                 </div>
                 <p class="help is-danger" v-if="contactError.email.length != 0">{{ contactError.email }}</p>
               </div>
@@ -46,7 +46,7 @@
               <div class="field">
                 <label class="label" for="contactPhone">Phone (Optional)</label>
                 <div class="control">
-                  <input id="contactPhone" class="input is-medium" type="text" placeholder="e.g: +628xxxxxx" v-model="contactData.phone" v-bind:readonly="contactProcess">
+                  <input id="contactPhone" class="input is-medium" type="text" v-model="contactData.phone" v-bind:readonly="contactProcess">
                 </div>
               </div>
             </div>
@@ -56,7 +56,7 @@
               <div class="field contact-message">
                 <label class="label" for="contactMessage">Message*</label>
                 <div class="control">
-                  <textarea id="contactMessage" class="textarea has-fixed-size is-medium" placeholder="e.g: Hello there!" rows="4" v-model="contactData.message" v-bind:class="{ 'is-danger': contactError.message.length != 0 }" v-bind:readonly="contactProcess"></textarea>
+                  <textarea id="contactMessage" class="textarea has-fixed-size is-medium" rows="4" v-model="contactData.message" v-bind:class="{ 'is-danger': contactError.message.length != 0 }" v-bind:readonly="contactProcess"></textarea>
                 </div>
                 <p class="help is-danger" v-if="contactError.message.length != 0">{{ contactError.message }}</p>
               </div>

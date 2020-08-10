@@ -12,7 +12,7 @@
           <div class="column">
             <div class="about-overview">
               <p>Hi! I'm <strong>Bimata</strong>, a <strong>UX/UI designer</strong> based in Berkeley, CA. I create <strong>design prototypes</strong> and conduct <strong>user research</strong>. I focused on <strong>simplicity</strong>, <strong>modularity</strong>, and <strong>easy maintenance</strong>.</p>
-              <p>I’m a designer transitioning from a <strong>front-end engineer</strong> background. My previous engineer background helps me understand the <strong>limitations</strong> and <strong>possibilities</strong> of current web technology. I recently completed <strong>Professional Diploma Program in UX/UI Design</strong> at <strong>UC Berkeley Extension</strong>.</p>
+              <p>I’m a designer transitioning from a <strong>front-end developer</strong> background. My previous developer background helps me understand the <strong>limitations</strong> and <strong>possibilities</strong> of current web technology. I recently completed <strong>Professional Diploma Program in UX/UI Design</strong> at <strong>UC Berkeley Extension</strong>.</p>
               <transition-expand>
                 <div class="about-overview-more" v-show="overviewMore">
                   <p>By day, I design and code either for a living or to learn and experiment new design tools. By night, you might find me adventuring around <a href="https://worldofwarcraft.com/en-gb/character/ravenholdt/Bedeviere" target="_blank">Azeroth</a>, slaying demons and stuff.</p>
@@ -116,7 +116,7 @@
             <h4>About this Website</h4>
             <p>This site has been designed and built using <a href="https://bulma.io/" target="_blank">Bulma CSS Framework</a> as the skeleton, with some customizations along the way. It's rendered and transitioned through <a href="https://vuejs.org/" target="_blank">Vue.JS</a>.</p>
             <p>The CSS is written in <a href="https://sass-lang.com/" target="_blank">Sass</a>, with <strong>mobile first approach</strong> and with <a href="https://type-scale.com/" target="_blank">Perfect Fourth scale</a> for a <a href="https://alistapart.com/article/more-meaningful-typography" target="_blank">more meaningful typhography</a>.</p>
-            <p>The color scheme of this site is heavily inspired by <a href="https://wow.gamepedia.com/Crest_of_the_Alliance" target="_blank">Alliance Crest</a>.</p>
+            <p>The color scheme of this site is heavily inspired by the <a href="https://wow.gamepedia.com/Crest_of_the_Alliance" target="_blank">Alliance Crest</a>.</p>
           </div>
           <div class="column">
             <img class="image-centered" src="../assets/squares.jpg" alt="navy gold square">
@@ -146,7 +146,7 @@ export default {
   data() {
     return {
       overviewMore: false,
-      overviewMoreCopy: 'More about me..'
+      overviewMoreCopy: 'More trivial infos about me..'
       // token: '178557724.1677ed0.a09bcf1811c348cabeccf098cff2d079'
     };
   },
@@ -156,10 +156,10 @@ export default {
 
       if ( vm.overviewMore == false ) {
         vm.overviewMore = true;
-        vm.overviewMoreCopy = 'Less about me...';
+        vm.overviewMoreCopy = 'Less trivial infos about me...';
       } else {
         vm.overviewMore = false;
-        vm.overviewMoreCopy = 'More about me...';
+        vm.overviewMoreCopy = 'More trivial infos about me...';
       }
     }
   }
