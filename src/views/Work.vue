@@ -4,7 +4,7 @@
       <div class="container">
         <h1><router-link to="/work">Works</router-link> / {{ work.title }}</h1>
         <div class="image work-image">
-          <img v-bind:alt="work.title" v-bind:src="'http://cdn.bedeviere.com/work' + work.thumbnail_path">
+          <img v-bind:alt="work.title" v-bind:src="'//cdn.bedeviere.com/work' + work.thumbnail_path">
         </div>
         <div class="columns work-info">
           <div class="column is-offset-3-desktop is-6">
@@ -58,13 +58,13 @@
             </div>
             <div class="column" v-if="article.type == 'image-large'">
               <div class="image work-image">
-                <img v-bind:alt="article.alt" v-bind:src="'http://cdn.bedeviere.com/work' + article.content">
+                <img v-bind:alt="article.alt" v-bind:src="'//cdn.bedeviere.com/work' + article.content">
                 <label class="image-info" v-html="article.label" v-if="article.label != '-'"></label>
               </div>
             </div>
             <div class="column is-offset-3-desktop is-6" v-if="article.type == 'image-small'">
               <div class="image work-image">
-                <img v-bind:alt="article.alt" v-bind:src="'http://cdn.bedeviere.com/work' + article.content">
+                <img v-bind:alt="article.alt" v-bind:src="'//cdn.bedeviere.com/work' + article.content">
                 <label class="image-info" v-html="article.label" v-if="article.label != '-'"></label>
               </div>
             </div>

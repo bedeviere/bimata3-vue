@@ -8,7 +8,7 @@
             <div class="columns">
               <div class="column">
                 <div class="image works-image">
-                  <router-link v-bind:to="'/work/' + work.slug"><img v-bind:alt="work.title" v-bind:src="'http://cdn.bedeviere.com/work' + work.thumbnail_path"></router-link>
+                  <router-link v-bind:to="'/work/' + work.slug"><img v-bind:alt="work.title" v-bind:src="'//cdn.bedeviere.com/work' + work.thumbnail_path"></router-link>
                 </div>
               </div>
               <div class="column">
