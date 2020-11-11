@@ -11,7 +11,7 @@
           </div>
           <div class="column">
             <div class="about-overview">
-              <p>Hi! I'm <strong>Bimata</strong>, a <strong>UX/UI designer</strong> based in Berkeley, CA. I create <strong>design prototypes</strong> and conduct <strong>user research</strong>. I focused on <strong>simplicity</strong>, <strong>modularity</strong>, and <strong>easy maintenance</strong>.</p>
+              <p>Hi! I'm <strong>Bimata</strong>, a <strong>UX/UI designer</strong> based in <strong>Jakarta, ID</strong>. I create <strong>design prototypes</strong> and conduct <strong>user research</strong>. I focused on <strong>simplicity</strong>, <strong>modularity</strong>, and <strong>easy maintenance</strong>.</p>
               <p>I’m a designer transitioning from a <strong>front-end developer</strong> background. My previous developer background helps me understand the <strong>limitations</strong> and <strong>possibilities</strong> of current web technology. I recently completed <strong>Professional Diploma Program in UX/UI Design</strong> at <strong>UC Berkeley Extension</strong>.</p>
               <transition-expand>
                 <div class="about-overview-more" v-show="overviewMore">

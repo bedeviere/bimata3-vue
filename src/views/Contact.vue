@@ -11,7 +11,7 @@
         </div>
         <div class="columns">
           <div class="column contact-location">
-            <h3><i class="fas fa-map-pin"></i> Berkeley, CA</h3>
+            <h3><i class="fas fa-map-pin"></i> Jakarta, ID</h3>
           </div>
           <div class="column contact-social">
             <ul class="list-social">
