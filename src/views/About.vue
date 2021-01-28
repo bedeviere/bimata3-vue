@@ -11,12 +11,12 @@
           </div>
           <div class="column">
             <div class="about-overview">
-              <p>Hi! I'm <strong>Bimata</strong>, a <strong>UX/UI designer</strong> based in <strong>Jakarta, ID</strong>. I create <strong>design prototypes</strong> and conduct <strong>user research</strong>. I focused on <strong>simplicity</strong>, <strong>modularity</strong>, and <strong>easy maintenance</strong>.</p>
+              <p>Hi! I'm <strong>Bimata</strong>, sometimes known as <strong>Bedeviere</strong>, a <strong>UX/UI designer</strong> based in <strong>Jakarta, ID</strong>. I create <strong>design prototypes</strong> and conduct <strong>user research</strong>. I focused on <strong>simplicity</strong>, <strong>modularity</strong>, and <strong>easy maintenance</strong>.</p>
               <p>I’m a designer transitioning from a <strong>front-end developer</strong> background. My previous developer background helps me understand the <strong>limitations</strong> and <strong>possibilities</strong> of current web technology. I recently completed <strong>Professional Diploma Program in UX/UI Design</strong> at <strong>UC Berkeley Extension</strong>.</p>
               <transition-expand>
                 <div class="about-overview-more" v-show="overviewMore">
-                  <p>By day, I design and code either for a living or to learn and experiment new design tools. By night, you might find me adventuring around <a href="https://worldofwarcraft.com/en-gb/character/ravenholdt/Bedeviere" target="_blank">Azeroth</a>, slaying demons and stuff.</p>
-                  <p>The name <strong>Bedeviere</strong> originally derived from <a href="https://en.wikipedia.org/wiki/Bedivere" target="_blank">Bedivere</a>, a famous <a href="https://en.wikipedia.org/wiki/Knights_of_the_Round_Table" target="_blank">Knight of the Round Table</a> from <strong>Arthurian Legends</strong>. I use the name for my World of Warcraft character without knowing I spelt it a bit different. Over time, I grew fond of the name and it stuck. The name becomes my primary alias ever since.</p>
+                  <p>By day, I design and code either for a living or to learn and experiment new design tools. By night, you might find me adventuring around <a href="https://worldofwarcraft.com/en-gb/character/eu/tarren-mill/sieglink" target="_blank">Azeroth</a>, slaying demons and stuff.</p>
+                  <p>The name <strong>Bedeviere</strong> originally derived from <a href="https://en.wikipedia.org/wiki/Bedivere" target="_blank">Bedivere</a>, a famous <a href="https://en.wikipedia.org/wiki/Knights_of_the_Round_Table" target="_blank">Knight of the Round Table</a> from <strong>Arthurian Legends</strong>. I use the name for my <a href="https://worldofwarcraft.com/en-gb/character/ravenholdt/Bedeviere" target="_blank">first World of Warcraft character</a> without knowing I spelt it a bit different. Over time, I grew fond of the name and it stuck. The name becomes my primary alias ever since.</p>
                 </div>
               </transition-expand>
               <div class="about-overview-buttons" v-on:click="overviewToggle">
