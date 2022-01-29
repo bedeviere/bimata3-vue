@@ -59,9 +59,9 @@
                 <div class="about-design">
                   <h4>Design Tools</h4>
                   <ul class="list-bullet">
+                    <li>Figma</li>
                     <li>Adobe XD</li>
                     <li>Sketch</li>
-                    <li>InVision</li>
                     <li>Adobe Illustrator</li>
                     <li>Adobe Photoshop</li>
                   </ul>
