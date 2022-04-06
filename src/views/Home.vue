@@ -15,7 +15,7 @@
           </div>
           <div class="home-summary columns">
             <div class="column is-two-thirds">
-              <p>I create <strong>design prototypes</strong> and conduct <strong>user research</strong>. I’m a designer transitioning from a <strong>front-end developer</strong> background. I recently completed <strong>Professional Diploma Program in UX/UI Design</strong> at <strong>UC Berkeley Extension</strong>.</p>
+              <p>I create <strong>design prototypes</strong> and conduct <strong>user research</strong>. I’m a designer transitioning from a <strong>front-end developer</strong> background. I am always curious with how people <strong>understand</strong> and <strong>use things</strong>.</p>
             </div>
           </div>
           <div class="buttons">
@@ -64,7 +64,7 @@ export default {
           duration: 8000
         },
         {
-          title: 'Azeroth Adventurer',
+          title: 'Valorant Protocol Agent',
           type: 'text',
           href: '',
           duration: 8000
@@ -85,6 +85,12 @@ export default {
           title: 'Occasional Writer',
           type: 'link',
           href: 'http://storywork.bedeviere.com',
+          duration: 8000
+        },
+        {
+          title: 'Azeroth Adventurer',
+          type: 'text',
+          href: '',
           duration: 8000
         },
         {
