@@ -11,7 +11,7 @@
           </div>
           <div class="column">
             <div class="about-overview">
-              <p>Hi! I'm <strong>Bimata</strong>, sometimes known as <strong>Bedeviere</strong>, a <strong>UX/UI designer</strong> based in <strong>Jakarta, ID</strong>. I create <strong>design prototypes</strong> and conduct <strong>user research</strong>. I am always curious with how people <strong>understand</strong> and <strong>use things</strong>.</p>
+              <p>Hi! I'm <strong>Bimata</strong>, sometimes known as <strong>Bedeviere</strong>, a <strong>UX/UI designer</strong> based in <strong>Jakarta, ID</strong>. I create <strong>design prototypes</strong> and conduct <strong>user research</strong>. I am always curious about how people <strong>understand</strong> and <strong>use things</strong>.</p>
               <p>I’m a designer transitioning from a <strong>front-end developer</strong> background. My previous developer background helps me recognize the <strong>limitations</strong> and <strong>possibilities</strong> of current web technology.</p>
               <transition-expand>
                 <div class="about-overview-more" v-show="overviewMore">
