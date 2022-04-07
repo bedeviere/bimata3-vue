@@ -119,7 +119,7 @@
             <p>The color scheme of this site is heavily inspired by the <a href="https://wow.gamepedia.com/Crest_of_the_Alliance" target="_blank">Alliance Crest</a>.</p>
           </div>
           <div class="column">
-            <img class="image-centered" src="../assets/squares.jpg" alt="navy gold square">
+            <img class="image-centered" src="../assets/hiragana.jpg" alt="navy gold square">
           </div>
         </div>
         <div class="link-next">
