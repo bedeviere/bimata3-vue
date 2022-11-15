@@ -15,10 +15,10 @@
           </div>
           <div class="column contact-social">
             <ul class="list-social">
-              <li><a class="button btn-icon btn-default" href="http://twitter.com/bedeviere" target="_blank"><i class="fab fa-fw fa-twitter"></i></a></li>
+              <li><a class="button btn-icon btn-default" href="http://dribbble.com/bedeviere" target="_blank"><i class="fab fa-fw fa-dribbble"></i></a></li>
               <li><a class="button btn-icon btn-default" href="http://linkedin.com/in/bedeviere" target="_blank"><i class="fab fa-fw fa-linkedin-in"></i></a></li>
+              <li><a class="button btn-icon btn-default" href="http://instagram.com/bedeviere" target="_blank"><i class="fab fa-fw fa-instagram"></i></a></li>
               <li><a class="button btn-icon btn-default" href="http://github.com/bedeviere" target="_blank"><i class="fab fa-fw fa-github"></i></a></li>
-              <li><a class="button btn-icon btn-default" href="http://codepen.com/bedeviere" target="_blank"><i class="fab fa-fw fa-codepen"></i></a></li>
             </ul>
           </div>
         </div>

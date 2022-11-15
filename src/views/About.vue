@@ -29,10 +29,10 @@
               <br>
               <h4>Social</h4>
               <ul class="list-social">
-                <li><a class="button btn-icon btn-default" href="http://github.com/bedeviere" target="_blank"><i class="fab fa-fw fa-github"></i></a></li>
-                <li><a class="button btn-icon btn-default" href="http://codepen.com/bedeviere" target="_blank"><i class="fab fa-fw fa-codepen"></i></a></li>
+                <li><a class="button btn-icon btn-default" href="http://dribbble.com/bedeviere" target="_blank"><i class="fab fa-fw fa-dribbble"></i></a></li>
                 <li><a class="button btn-icon btn-default" href="http://linkedin.com/in/bedeviere" target="_blank"><i class="fab fa-fw fa-linkedin-in"></i></a></li>
                 <li><a class="button btn-icon btn-default" href="http://instagram.com/bedeviere" target="_blank"><i class="fab fa-fw fa-instagram"></i></a></li>
+                <li><a class="button btn-icon btn-default" href="http://github.com/bedeviere" target="_blank"><i class="fab fa-fw fa-github"></i></a></li>
               </ul>
               <br>
               <h4>Also Known As</h4>
@@ -47,11 +47,11 @@
                 <div class="about-service">
                   <h4>What I Do</h4>
                   <ul class="list-bullet">
-                    <li>User Reseach & Persona</li>
-                    <li>User Flows</li>
+                    <li>User Reseach & User Flows</li>
+                    <li>Product Design</li>
                     <li>Wireframing & Lo-Fi Design</li>
                     <li>Hi-Fi Design & Prototyping</li>
-                    <li>Front-End Development</li>
+                    <li>Design Systems</li>
                   </ul>
                 </div>
               </div>
@@ -85,7 +85,7 @@
               </div>
               <div class="column">
                 <div class="about-love">
-                  <h4>What I &lt;3</h4>
+                  <h4>What I ❤️</h4>
                   <ul class="list-bullet">
                     <li><a href="https://pinterest.com/bedeviere/for-the-alliance/" target="_blank">For the Alliance!</a></li>
                     <li><a href="http://instagram.com/bimatagunpla" target="_blank">Gunpla</a></li>
