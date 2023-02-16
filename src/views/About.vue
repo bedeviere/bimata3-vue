@@ -90,7 +90,7 @@
                     <li><a href="https://pinterest.com/bedeviere/for-the-alliance/" target="_blank">For the Alliance!</a></li>
                     <li><a href="http://instagram.com/bimatagunpla" target="_blank">Gunpla</a></li>
                     <li><a href="https://acecombat.fandom.com/wiki/Su-35S_Flanker-E" target="_blank">Su-35S</a></li>
-                    <li><a href="https://youtu.be/lxw4Y8qzq4w" target="_blank">Eve & suis - "Heikousen"</a></li>
+                    <li><a href="https://youtu.be/x8VYWazR5mE" target="_blank">YOASOBI - "夜に駆ける"</a></li>
                     <li><a href="https://pinterest.com/bedeviere/troopers/" target="_blank">Troopers</a></li>
                   </ul>
                 </div>
@@ -119,7 +119,7 @@
             <p>The color scheme of this site is heavily inspired by the <a href="https://wow.gamepedia.com/Crest_of_the_Alliance" target="_blank">Alliance Crest</a>.</p>
           </div>
           <div class="column">
-            <img class="image-centered" src="../assets/hiragana.jpg" alt="navy gold square">
+            <img class="image-centered" src="../assets/katakana.gif" alt="navy gold square">
           </div>
         </div>
         <div class="link-next">

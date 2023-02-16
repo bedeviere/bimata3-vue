@@ -40,19 +40,7 @@ export default {
       roleDuration: 8000,
       roles: [
         {
-          title: 'Designer // Developer',
-          type: 'text',
-          href: '',
-          duration: 12000
-        },
-        {
-          title: 'UX/UI Designer',
-          type: 'text',
-          href: '',
-          duration: 12000
-        },
-        {
-          title: 'Front End Developer',
+          title: 'UX/UI Product Designer',
           type: 'text',
           href: '',
           duration: 12000
@@ -63,8 +51,15 @@ export default {
           href: '',
           duration: 8000
         },
+
         {
-          title: 'Valorant Protocol Agent',
+          title: 'Front End Developer',
+          type: 'text',
+          href: '',
+          duration: 8000
+        },
+        {
+          title: 'Valorant Agent',
           type: 'text',
           href: '',
           duration: 8000
