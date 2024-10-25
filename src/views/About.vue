@@ -11,16 +11,15 @@
           </div>
           <div class="column">
             <div class="about-overview">
-              <p>Hi! I'm <strong>Bimata</strong>, sometimes known as <strong>Bedeviere</strong>, a <strong>UX/UI designer</strong> based in <strong>Jakarta, ID</strong>. I create <strong>design prototypes</strong> and conduct <strong>user research</strong>. I am always curious about how people <strong>understand</strong> and <strong>use things</strong>.</p>
-              <p>I’m a designer transitioning from a <strong>front-end developer</strong> background. My previous developer background helps me recognize the <strong>limitations</strong> and <strong>possibilities</strong> of current web technology.</p>
+              <p>Hi! I'm <strong>Bimata</strong>, sometimes known as <strong>Bedeviere</strong>, a <strong>UX/UI designer</strong> based in <strong>Jakarta, ID</strong>. I create <strong>design prototypes</strong> and conduct <strong>user research</strong>. My transition from front-end development also helps me recognize the limitations and possibilities of current web technologies. Fundamentally, I am constantly curious about how people perceive and interact with products and things.</p>
               <transition-expand>
                 <div class="about-overview-more" v-show="overviewMore">
-                  <p>By day, I research, brainstorm, experiment, and design for a living. By night, you might find me chilling in <a href="https://playvalorant.com/en-us/" target="_blank">Valorant</a>, clicking heads quickly and stuff.</p>
+                  <p>By day, I research, brainstorm, experiment, and design for a living. By night, you might find me chilling in <a href="https://playvalorant.com/en-us/" target="_blank">VALORANT</a>, clicking heads quickly and stuff.</p>
                   <p>The name <strong>Bedeviere</strong> originally derived from <a href="https://en.wikipedia.org/wiki/Bedivere" target="_blank">Bedivere</a>, a famous <a href="https://en.wikipedia.org/wiki/Knights_of_the_Round_Table" target="_blank">Knight of the Round Table</a> from <strong>Arthurian Legends</strong>. I use the name for my <a href="https://worldofwarcraft.com/en-gb/character/ravenholdt/Bedeviere" target="_blank">first World of Warcraft character</a> without knowing I spelt it a bit different. Over time, I grew fond of the name and it stuck. The name becomes my primary alias ever since.</p>
                 </div>
               </transition-expand>
               <div class="about-overview-buttons" v-on:click="overviewToggle">
-                <div class="button btn-icon btn-default">
+                <div class="button btn-icon btn-primary">
                   <i class="fas fa-fw fa-plus" v-if="!overviewMore"></i>
                   <i class="fas fa-fw fa-minus" v-else></i>
                 </div>
@@ -29,10 +28,10 @@
               <br>
               <h4>Social</h4>
               <ul class="list-social">
-                <li><a class="button btn-icon btn-default" href="http://dribbble.com/bedeviere" target="_blank"><i class="fab fa-fw fa-dribbble"></i></a></li>
-                <li><a class="button btn-icon btn-default" href="http://linkedin.com/in/bedeviere" target="_blank"><i class="fab fa-fw fa-linkedin-in"></i></a></li>
-                <li><a class="button btn-icon btn-default" href="http://instagram.com/bedeviere" target="_blank"><i class="fab fa-fw fa-instagram"></i></a></li>
-                <li><a class="button btn-icon btn-default" href="http://github.com/bedeviere" target="_blank"><i class="fab fa-fw fa-github"></i></a></li>
+                <li><a class="button btn-icon btn-primary" href="http://dribbble.com/bedeviere" target="_blank"><i class="fab fa-fw fa-dribbble"></i></a></li>
+                <li><a class="button btn-icon btn-primary" href="http://linkedin.com/in/bedeviere" target="_blank"><i class="fab fa-fw fa-linkedin-in"></i></a></li>
+                <li><a class="button btn-icon btn-primary" href="http://instagram.com/bedeviere" target="_blank"><i class="fab fa-fw fa-instagram"></i></a></li>
+                <li><a class="button btn-icon btn-primary" href="http://github.com/bedeviere" target="_blank"><i class="fab fa-fw fa-github"></i></a></li>
               </ul>
               <br>
               <h4>Also Known As</h4>

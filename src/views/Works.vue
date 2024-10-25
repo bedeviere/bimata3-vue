@@ -21,7 +21,7 @@
                   <p v-html="work.overview"></p>
                 </article>
                 <div class="buttons">
-                  <router-link v-bind:to="'/work/' + work.slug" class="button btn-default">Case Study&nbsp;<i class="fas fa-long-arrow-alt-right"></i></router-link>
+                  <router-link v-bind:to="'/work/' + work.slug" class="button btn-primary">Case Study&nbsp;<i class="fas fa-long-arrow-alt-right"></i></router-link>
                 </div>
               </div>
             </div>
@@ -76,15 +76,6 @@
   }
   .works-type {
     font-weight: 700;
-  }
-  .works-title {
-    a {
-      color: $color-default;
-      &:hover,
-      &:focus {
-        color: $color-primary;
-      }
-    }
   }
   .works-role {
     font-style: italic;

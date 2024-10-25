@@ -115,6 +115,7 @@ export default {
   h4,
   h5,
   h6 {
+    color: $color-primary;
     font-family: 'Montserrat', Helvetica, Arial, sans-serif;
     font-weight: 700;
     text-transform: uppercase;
@@ -146,10 +147,10 @@ export default {
   }
 
   a {
-    color: $color-default;
+    color: $color-primary;
     font-weight: 700;
     position: relative;
-    box-shadow:  0 -1px 0 0 white inset, 0 -0.55em 0 0 $color-primary inset;
+    box-shadow:  0 -1px 0 0 white inset, 0 -0.55em 0 0 $color-secondary inset;
     @include transition-default;
     span {
       &::selection {
@@ -161,13 +162,19 @@ export default {
     }
     &:hover,
     &:focus {
-      color: $color-primary;
-      box-shadow:  0 -1px 0 0 white inset, 0 0em 0 0 $color-primary inset;
+      color: $color-secondary;
+      box-shadow:  0 -1px 0 0 white inset, 0 0em 0 0 $color-secondary inset;
     }
   }
 
   strong {
     color: inherit;
+    &.success {
+      color: $color-success;
+    }
+    &.danger {
+      color: $color-danger;
+    }
   }
 
   .fab {
@@ -289,13 +296,13 @@ export default {
 
   .btn-primary {
     background-color: $color-primary;
-    color: $color-default;
+    color: white;
     border-color: $color-primary;
     &:hover,
     &:focus {
-      background-color: darken( $color-primary, 10% );
-      border-color: darken( $color-primary, 10% );
-      color: $color-default;
+      background-color: darken( $color-secondary, 10% );
+      border-color: darken( $color-secondary, 10% );
+      color: $color-primary;
     }
     &::before {
       border-color: $color-primary;
@@ -385,7 +392,7 @@ export default {
     font-size: .75em;
     text-transform: uppercase;
     background-color: white;
-    color: $color-default;
+    color: $color-primary;
     padding-left: .5em;
     padding-right: .5em;
     position: absolute;
@@ -400,14 +407,14 @@ export default {
     color: $color-default;
     box-shadow: none;
     border-width: 2px;
-    border-color: $color-default;
+    border-color: $color-primary;
     @include transition-default;
     &::placeholder {
       color: $color-default;
     }
     &:hover,
     &:focus {
-      border-color: $color-primary;
+      border-color: $color-secondary;
     }
   }
 
@@ -440,14 +447,14 @@ export default {
         display: inline-block;
         padding: 0 10px;
         a {
-          color: $color-default;
+          color: $color-primary;
           font-weight: 700;
           text-decoration: none;
           text-transform: uppercase;
           display: block;
           &:hover,
           &.router-link-active {
-            color: $color-primary;
+            color: $color-secondary;
           }
         }
       }

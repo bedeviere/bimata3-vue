@@ -5,8 +5,7 @@
         <h1>Contact</h1>
         <div class="contact-greeting">
           <p>
-            Have a cool project in mind, and think I can help you?<br>
-            Feel free to email me at <a href="mailto:bimata.prathama@gmail.com">bimata.prathama@gmail.com</a>
+            Have a cool project in mind, and think I can help you? Feel free to email me at <a href="mailto:bimata.prathama@gmail.com">bimata.prathama@gmail.com</a>
           </p>
         </div>
         <div class="columns">
@@ -15,10 +14,10 @@
           </div>
           <div class="column contact-social">
             <ul class="list-social">
-              <li><a class="button btn-icon btn-default" href="http://dribbble.com/bedeviere" target="_blank"><i class="fab fa-fw fa-dribbble"></i></a></li>
-              <li><a class="button btn-icon btn-default" href="http://linkedin.com/in/bedeviere" target="_blank"><i class="fab fa-fw fa-linkedin-in"></i></a></li>
-              <li><a class="button btn-icon btn-default" href="http://instagram.com/bedeviere" target="_blank"><i class="fab fa-fw fa-instagram"></i></a></li>
-              <li><a class="button btn-icon btn-default" href="http://github.com/bedeviere" target="_blank"><i class="fab fa-fw fa-github"></i></a></li>
+              <li><a class="button btn-icon btn-primary" href="http://dribbble.com/bedeviere" target="_blank"><i class="fab fa-fw fa-dribbble"></i></a></li>
+              <li><a class="button btn-icon btn-primary" href="http://linkedin.com/in/bedeviere" target="_blank"><i class="fab fa-fw fa-linkedin-in"></i></a></li>
+              <li><a class="button btn-icon btn-primary" href="http://instagram.com/bedeviere" target="_blank"><i class="fab fa-fw fa-instagram"></i></a></li>
+              <li><a class="button btn-icon btn-primary" href="http://github.com/bedeviere" target="_blank"><i class="fab fa-fw fa-github"></i></a></li>
             </ul>
           </div>
         </div>
@@ -63,7 +62,7 @@
             </div>
           </div>
           <div class="buttons contact-buttons">
-            <button class="button btn-default" type="submit" v-bind:disabled="contactProcess" v-html="contactButton"></button>
+            <button class="button btn-primary" type="submit" v-bind:disabled="contactProcess" v-html="contactButton"></button>
           </div>
           <p class="help is-success contact-success">{{ contactSuccess }}</p>
         </form>
