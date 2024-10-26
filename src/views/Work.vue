@@ -7,7 +7,7 @@
           <img v-bind:alt="work.title" v-bind:src="'//cdn.bedeviere.com/work' + work.thumbnail_path">
         </div>
         <div class="columns work-info">
-          <div class="column is-offset-3-desktop is-6">
+          <div class="column is-offset-2-desktop is-8">
             <div class="work-type">
               <label><strong>Type</strong></label>
               <p>{{ work.type }}</p>
@@ -27,39 +27,39 @@
         </div>
         <article class="work-article">
           <div class="columns" v-for="(article, i) in work.article" v-bind:key="i">
-            <div class="column is-offset-3-desktop is-6" v-if="article.type == 'h3'">
+            <div class="column is-offset-2-desktop is-8" v-if="article.type == 'h3'">
               <h3 v-html="article.content"></h3>
             </div>
-            <div class="column is-offset-3-desktop is-6" v-if="article.type == 'h4'">
+            <div class="column is-offset-2-desktop is-8" v-if="article.type == 'h4'">
               <h4 v-html="article.content"></h4>
             </div>
-            <div class="column is-offset-3-desktop is-6" v-if="article.type == 'h5'">
+            <div class="column is-offset-2-desktop is-8" v-if="article.type == 'h5'">
               <h5 v-html="article.content"></h5>
             </div>
-            <div class="column is-offset-3-desktop is-6" v-if="article.type == 'h6'">
+            <div class="column is-offset-2-desktop is-8" v-if="article.type == 'h6'">
               <h6 v-html="article.content"></h6>
             </div>
-            <div class="column is-offset-3-desktop is-6" v-if="article.type == 'paragraph'">
+            <div class="column is-offset-2-desktop is-8" v-if="article.type == 'paragraph'">
               <p v-html="article.content"></p>
             </div>
-            <div class="column is-offset-3-desktop is-6" v-if="article.type == 'ul'">
+            <div class="column is-offset-2-desktop is-8" v-if="article.type == 'ul'">
               <p v-html="article.content"></p>
               <ul class="list-bullet">
                 <li v-for="(list, i) in article.list" v-bind:key="i" v-html="list.content"></li>
               </ul>
             </div>
-            <div class="column is-offset-3-desktop is-6" v-if="article.type == 'ol'">
+            <div class="column is-offset-2-desktop is-8" v-if="article.type == 'ol'">
               <p v-html="article.content"></p>
               <ol class="list-number">
                 <li v-for="(list, i) in article.list" v-bind:key="i" v-html="list.content"></li>
               </ol>
             </div>
-            <div class="column is-offset-3-desktop is-6" v-if="article.type == 'highlight'">
+            <div class="column is-offset-2-desktop is-8" v-if="article.type == 'highlight'">
               <div class="message highlight-default">
                 <div class="message-body" v-html="article.content"></div>
               </div>
             </div>
-            <div class="column is-offset-3-desktop is-6" v-if="article.type == 'quote'">
+            <div class="column is-offset-2-desktop is-8" v-if="article.type == 'quote'">
               <blockquote class="quote" v-html="article.content"></blockquote>
             </div>
             <div class="column" v-if="article.type == 'image-large'">
@@ -68,7 +68,7 @@
                 <label class="image-info" v-html="article.label" v-if="article.label != '-'"></label>
               </div>
             </div>
-            <div class="column is-offset-3-desktop is-6" v-if="article.type == 'image-small'">
+            <div class="column is-offset-2-desktop is-8" v-if="article.type == 'image-small'">
               <div class="image work-image">
                 <img v-bind:alt="article.alt" v-bind:src="'//cdn.bedeviere.com/work' + article.content">
                 <label class="image-info" v-html="article.label" v-if="article.label != '-'"></label>

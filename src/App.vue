@@ -360,7 +360,7 @@ export default {
       }
     }
     .message-body {
-      border-color: $color-default;
+      border-color: $color-primary;
       color: $color-default;
     }
   }
