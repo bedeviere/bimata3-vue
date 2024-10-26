@@ -137,6 +137,14 @@ export default {
     font-size: 1.333rem;
   }
 
+  h5 {
+    font-size: 1rem;
+  }
+
+  h6 {
+    font-size: 0.75rem;
+  }
+
   hr {
     border: none;
     border-top: 2px solid $color-default;
@@ -338,7 +346,6 @@ export default {
 
   .quote {
     font-style: italic;
-    font-size: 1.333em;
     opacity: .75;
     padding-left: 1em;
     border-left: 4px solid $color-primary;

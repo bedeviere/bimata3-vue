@@ -20,7 +20,7 @@
               <label><strong>Tools & Methods</strong></label>
               <p><span v-for="(tool, i) in work.tools" v-bind:key="i">{{ tool.name }}<span v-if="i != (work.tools.length - 1)">, </span></span></p>
             </div>
-            <div class="buttons work-live">
+            <div v-if="work.link != ''" class="buttons work-live">
               <a v-bind:href="work.link" target="_blank" class="button btn-primary">{{ work.link_text }}&nbsp;<i class="fas fa-external-link-square-alt"></i></a>
             </div>
           </div>
