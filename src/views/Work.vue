@@ -33,6 +33,12 @@
             <div class="column is-offset-3-desktop is-6" v-if="article.type == 'h4'">
               <h4 v-html="article.content"></h4>
             </div>
+            <div class="column is-offset-3-desktop is-6" v-if="article.type == 'h5'">
+              <h5 v-html="article.content"></h5>
+            </div>
+            <div class="column is-offset-3-desktop is-6" v-if="article.type == 'h6'">
+              <h6 v-html="article.content"></h6>
+            </div>
             <div class="column is-offset-3-desktop is-6" v-if="article.type == 'paragraph'">
               <p v-html="article.content"></p>
             </div>

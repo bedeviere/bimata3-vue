@@ -15,11 +15,11 @@
           </div>
           <div class="home-summary columns">
             <div class="column is-two-thirds">
-              <p>I create <strong>design prototypes</strong> and conduct <strong>user research</strong>. I’m a designer transitioning from a <strong>front-end developer</strong> background. I am always curious with how people <strong>understand</strong> and <strong>use things</strong>.</p>
+              <p>I create <strong>design prototypes</strong> and conduct <strong>user research</strong>. I’m a designer with a previous <strong>front-end developer</strong> background. I am constantly curious with how people <strong>understand</strong> and <strong>use things</strong>.</p>
             </div>
           </div>
           <div class="buttons">
-            <router-link to="/work" class="button btn-default">See Case Studies&nbsp;<i class="fas fa-long-arrow-alt-right"></i></router-link>
+            <router-link to="/work" class="button btn-primary">See Case Studies&nbsp;<i class="fas fa-long-arrow-alt-right"></i></router-link>
           </div>
         </div>
       </div>

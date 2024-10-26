@@ -169,12 +169,18 @@ export default {
 
   strong {
     color: inherit;
-    &.success {
-      color: $color-success;
-    }
-    &.danger {
-      color: $color-danger;
-    }
+  }
+
+  .text-secondary {
+    color: $color-secondary;
+  }
+
+  .text-success {
+    color: $color-success;
+  }
+
+  .text-danger {
+    color: $color-danger;
   }
 
   .fab {
@@ -334,7 +340,8 @@ export default {
     font-style: italic;
     font-size: 1.333em;
     opacity: .75;
-    padding-left: 2em;
+    padding-left: 1em;
+    border-left: 4px solid $color-primary;
   }
 
   .highlight-default {
