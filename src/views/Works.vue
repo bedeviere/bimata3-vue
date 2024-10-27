@@ -42,7 +42,7 @@
   export default {
     name: 'works',
     metaInfo: {
-      title: 'Works - Bimata Prathama, UX/UI Designer'
+      title: 'Works - Bimata Prathama, UX/UI Product Designer'
     },
     data() {
       return {

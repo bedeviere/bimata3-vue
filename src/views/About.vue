@@ -11,7 +11,9 @@
           </div>
           <div class="column">
             <div class="about-overview">
-              <p>Hi! I'm <strong>Bimata</strong>, sometimes known as <strong>Bedeviere</strong>, a <strong>UX/UI designer</strong> based in <strong>Jakarta, ID</strong>. I create <strong>design prototypes</strong> and conduct <strong>user research</strong>. My transition from front-end development also helps me recognize the limitations and possibilities of current web technologies. Fundamentally, I am constantly curious about how people perceive and interact with products and things.</p>
+              <p>Hi! I'm <strong>Bimata</strong>, sometimes known as <strong>Bedeviere</strong>, a <strong>UX/UI Product Designer</strong> based in <strong>Jakarta, ID</strong>.</p>
+              <p>My approach combines user-centric research with a collaborative spirit, working alongside cross-functional teams to bring robust design solutions to life. My transition from front-end development provides a comprehensive understanding of the technical landscape, ensuring seamless design-to-development workflows.</p>
+              <p>Fundamentally, I am constantly curious about how people perceive and interact with products and things.</p>
               <transition-expand>
                 <div class="about-overview-more" v-show="overviewMore">
                   <p>By day, I research, brainstorm, experiment, and design for a living. By night, you might find me chilling in <a href="https://playvalorant.com/en-us/" target="_blank">VALORANT</a>, clicking heads quickly and stuff.</p>
@@ -33,9 +35,6 @@
                 <li><a class="button btn-icon btn-primary" href="http://instagram.com/bedeviere" target="_blank"><i class="fab fa-fw fa-instagram"></i></a></li>
                 <li><a class="button btn-icon btn-primary" href="http://github.com/bedeviere" target="_blank"><i class="fab fa-fw fa-github"></i></a></li>
               </ul>
-              <br>
-              <h4>Also Known As</h4>
-              <p>Tama Harianto, Bedeviere</p>
             </div>
           </div>
         </div>
@@ -58,7 +57,7 @@
                 <div class="about-design">
                   <h4>Design Tools</h4>
                   <ul class="list-bullet">
-                    <li>Figma</li>
+                    <li>Figma & FigJam</li>
                     <li>Adobe XD</li>
                     <li>Sketch</li>
                     <li>Adobe Illustrator</li>
@@ -114,7 +113,7 @@
           <div class="column">
             <h4>About this Website</h4>
             <p>This site has been designed and built using <a href="https://bulma.io/" target="_blank">Bulma CSS Framework</a> as the skeleton, with some customizations along the way. It's rendered and transitioned through <a href="https://vuejs.org/" target="_blank">Vue.JS</a>.</p>
-            <p>The CSS is written in <a href="https://sass-lang.com/" target="_blank">Sass</a>, with <strong>mobile first approach</strong> and with <a href="https://type-scale.com/" target="_blank">Perfect Fourth scale</a> for a <a href="https://alistapart.com/article/more-meaningful-typography" target="_blank">more meaningful typhography</a>.</p>
+            <p>The CSS is written in <a href="https://sass-lang.com/" target="_blank">Sass</a>, with <strong>mobile first approach</strong> and with <a href="https://type-scale.com/" target="_blank">Perfect Fourth scale</a> for a <a href="https://alistapart.com/article/more-meaningful-typography" target="_blank">more meaningful typography</a>.</p>
             <p>The color scheme of this site is heavily inspired by the <a href="https://wow.gamepedia.com/Crest_of_the_Alliance" target="_blank">Alliance Crest</a>.</p>
           </div>
           <div class="column">
@@ -136,7 +135,7 @@ import TransitionExpand from '../components/TransitionExpand.vue'
 export default {
   name: 'about',
   metaInfo: {
-    title: 'About - Bimata Prathama, UI/UX Designer'
+    title: 'About - Bimata Prathama, UI/UX Product Designer'
   },
   components: {
     TransitionExpand

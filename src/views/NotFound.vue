@@ -19,7 +19,7 @@
 export default {
   name: 'not-found',
   metaInfo: {
-    title: '404 Not Found - Bimata Prathama, UX/UI Designer'
+    title: '404 Not Found - Bimata Prathama, UX/UI Product Designer'
   }
 }
 </script>
