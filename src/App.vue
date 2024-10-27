@@ -71,6 +71,7 @@ export default {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: $color-default;
+    line-height: 1.75;
   }
 
   ::selection {
