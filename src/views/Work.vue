@@ -204,8 +204,18 @@
   .work-article {
     margin-top: .75em;
     h3,
-    h4 {
+    h4,
+    h5,
+    h6 {
       margin-bottom: -0.75em;
+    }
+    iframe {
+      width: 100%;
+    }
+  }
+  @media only screen and (min-width: 768px) {
+    iframe {
+      height: 600px;
     }
   }
 </style>
