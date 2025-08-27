@@ -5,12 +5,14 @@
         <h1>Contact</h1>
         <div class="contact-greeting">
           <p>
-            Have a cool project in mind, and think I can help you? Feel free to email me at <a href="mailto:bimata.prathama@gmail.com">bimata.prathama@gmail.com</a>
+            Have a cool project in mind, and think I can help you? Let's connect!
           </p>
         </div>
         <div class="columns">
           <div class="column contact-location">
-            <h3><i class="fas fa-map-pin"></i> Jakarta, ID</h3>
+            <div class="buttons">
+              <a class="button btn-primary" href="mailto:hi@bedeviere.com" target="_blank">hi@bedeviere.com</a>
+            </div>
           </div>
           <div class="column contact-social">
             <ul class="list-social">
