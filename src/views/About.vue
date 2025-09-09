@@ -47,9 +47,9 @@
                   <ul class="list-bullet">
                     <li>User Reseach & User Flows</li>
                     <li>Product Design</li>
-                    <li>Wireframing & Lo-Fi Design</li>
-                    <li>Hi-Fi Design & Prototyping</li>
+                    <li>UI Design & Prototyping</li>
                     <li>Design Systems</li>
+                    <li>WordPress Development</li>
                   </ul>
                 </div>
               </div>
@@ -57,11 +57,11 @@
                 <div class="about-design">
                   <h4>Design Tools</h4>
                   <ul class="list-bullet">
-                    <li>Figma & FigJam</li>
+                    <li>Figma</li>
+                    <li>FigJam</li>
+                    <li>Figma Draw</li>
                     <li>Adobe XD</li>
                     <li>Sketch</li>
-                    <li>Adobe Illustrator</li>
-                    <li>Adobe Photoshop</li>
                   </ul>
                 </div>
               </div>
@@ -74,7 +74,7 @@
                   <h4>Tech Stack</h4>
                   <ul class="list-bullet">
                     <li>HTML5</li>
-                    <li>CSS3 / SCSS</li>
+                    <li>CSS3 / SCSS / LESS</li>
                     <li>JS / Node / Vue.JS</li>
                     <li>WordPress CMS</li>
                     <li>Git</li>

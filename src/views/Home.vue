@@ -46,20 +46,25 @@ export default {
           duration: 12000
         },
         {
-          title: 'Hobbyist Photographer',
-          type: 'text',
-          href: '',
-          duration: 8000
-        },
-
-        {
           title: 'Front End Developer',
           type: 'text',
           href: '',
           duration: 8000
         },
         {
-          title: 'Valorant Agent',
+          title: 'WordPress Developer',
+          type: 'text',
+          href: '',
+          duration: 8000
+        },
+        {
+          title: 'Yoru Main (VALORANT)',
+          type: 'link',
+          href: 'https://tracker.gg/valorant/profile/riot/Bedeviere%23Plays/overview?platform=pc&playlist=competitive',
+          duration: 8000
+        },
+        {
+          title: 'Hobbyist Photographer',
           type: 'text',
           href: '',
           duration: 8000
@@ -77,21 +82,9 @@ export default {
           duration: 8000
         },
         {
-          title: 'Occasional Writer',
-          type: 'link',
-          href: 'http://storywork.bedeviere.com',
-          duration: 8000
-        },
-        {
           title: 'Azeroth Adventurer',
-          type: 'text',
-          href: '',
-          duration: 8000
-        },
-        {
-          title: 'CSGO Player',
-          type: 'text',
-          href: '',
+          type: 'link',
+          href: 'https://worldofwarcraft.blizzard.com/en-gb/character/eu/tarren-mill/sieglink/',
           duration: 8000
         },
         {

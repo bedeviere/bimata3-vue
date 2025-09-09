@@ -11,7 +11,7 @@
         <div class="columns">
           <div class="column contact-location">
             <div class="buttons">
-              <a class="button btn-primary" href="mailto:hi@bedeviere.com" target="_blank">hi@bedeviere.com</a>
+              <a class="button btn-primary" href="mailto:hi@bedeviere.com" target="_blank"><i class="fas fa-envelope"></i>&nbsp;hi@bedeviere.com</a>
             </div>
           </div>
           <div class="column contact-social">
