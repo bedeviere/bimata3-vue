@@ -38,64 +38,101 @@
             </div>
           </div>
         </div>
-        <div class="columns">
+      </div>
+    </section>
+    <section class="section is-shade">
+      <div class="container">
+        <div class="columns is-centered">
           <div class="column">
-            <div class="columns">
-              <div class="column">
-                <div class="about-service">
-                  <h4>What I Do</h4>
-                  <ul class="list-bullet">
-                    <li>User Reseach & User Flows</li>
-                    <li>Product Design</li>
-                    <li>UI Design & Prototyping</li>
-                    <li>Design Systems</li>
-                    <li>WordPress Development</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="column">
-                <div class="about-design">
-                  <h4>Design Tools</h4>
-                  <ul class="list-bullet">
-                    <li>Figma</li>
-                    <li>FigJam</li>
-                    <li>Figma Draw</li>
-                    <li>Adobe XD</li>
-                    <li>Sketch</li>
-                  </ul>
-                </div>
-              </div>
+            <figure class="image">
+              <img src="../assets/design.svg" alt="illustration ux wireframing">
+            </figure>
+          </div>
+          <div class="column">
+            <h3>UX/UI & Product Design</h3>
+            <p>I create digital experiences that are both intuitive and visually engaging. From research and user flows to polished interfaces, I design products that meet real user needs and business goals. My process includes wireframing, prototyping, and usability testing to validate ideas early. I build scalable design systems to keep products consistent and easy to maintain.</p>
+            <div class="buttons about-tools">
+              <a href="https://www.figma.com/design/" target="_blank" class="button btn-primary-o">
+                <i class="fab fa-figma"></i>&nbsp;Figma Design
+              </a>
+              <a href="https://www.figma.com/figjam/" target="_blank" class="button btn-primary-o">
+                <i class="fab fa-figma"></i>&nbsp;Figjam
+              </a>
+              <a href="https://www.figma.com/draw/" target="_blank" class="button btn-primary-o">
+                <i class="fab fa-figma"></i>&nbsp;Figma Draw
+              </a>
+              <a href="https://www.sketch.com/" target="_blank" class="button btn-primary-o">
+                <i class="fab fa-sketch"></i>&nbsp;Sketch
+              </a>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="columns is-centered is-reversed">
           <div class="column">
-            <div class="columns">
-              <div class="column">
-                <div class="about-tech">
-                  <h4>Tech Stack</h4>
-                  <ul class="list-bullet">
-                    <li>HTML5</li>
-                    <li>CSS3 / SCSS / LESS</li>
-                    <li>JS / Node / Vue.JS</li>
-                    <li>WordPress CMS</li>
-                    <li>Git</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="column">
-                <div class="about-love">
-                  <h4>What I ❤️</h4>
-                  <ul class="list-bullet">
-                    <li><a href="https://pinterest.com/bedeviere/for-the-alliance/" target="_blank">For the Alliance!</a></li>
-                    <li><a href="http://instagram.com/bimatagunpla" target="_blank">Gunpla</a></li>
-                    <li><a href="https://acecombat.fandom.com/wiki/Su-35S_Flanker-E" target="_blank">Su-35S</a></li>
-                    <li><a href="https://youtu.be/x8VYWazR5mE" target="_blank">YOASOBI - "夜に駆ける"</a></li>
-                    <li><a href="https://pinterest.com/bedeviere/troopers/" target="_blank">Troopers</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div> 
+            <figure class="image">
+              <img src="../assets/development.svg" alt="illustration web development">
+            </figure>
+          </div>
+          <div class="column">
+            <h3>Front-end & WordPress Development</h3>
+            <p>I develop fast, responsive websites with clean, maintainable front-end code. From custom WordPress themes to tailored functionality, I create solutions that fit your brand and business needs. My builds prioritize performance, accessibility, and seamless user experience across all devices. I integrate flexible content management, making updates simple and efficient.</p>
+            <div class="buttons about-tools">
+              <a href="https://en.wikipedia.org/wiki/HTML5" target="_blank" class="button btn-primary-o">
+                HTML&nbsp;<i class="fab fa-html5"></i>
+              </a>
+              <a href="https://www.w3.org/TR/2001/WD-css3-roadmap-20010523/" target="_blank" class="button btn-primary-o">
+                CSS&nbsp;<i class="fab fa-css3-alt"></i>
+              </a>
+              <a href="https://sass-lang.com/" target="_blank" class="button btn-primary-o">
+                <i class="fab fa-sass"></i>
+              </a>
+              <a href="https://lesscss.org/" target="_blank" class="button btn-primary-o">
+                <i class="fab fa-less"></i>
+              </a>
+              <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank" class="button btn-primary-o">
+                <i class="fab fa-js"></i>&nbsp;JavaScript
+              </a>
+              <a href="https://nodejs.org/en" target="_blank" class="button btn-primary-o">
+                Node&nbsp;<i class="fab fa-node-js"></i>
+              </a>
+              <a href="https://vuejs.org/" target="_blank" class="button btn-primary-o">
+                <i class="fab fa-vuejs"></i>&nbsp;Vue.JS
+              </a>
+              <a href="https://wordpress.org/" target="_blank" class="button btn-primary-o">
+                <i class="fab fa-wordpress-simple"></i>&nbsp;WordPress CMS
+              </a>
+            </div>
           </div>
         </div>
+      </div>
+    </section>
+    <section class="section is-shade">
+      <div class="container">
+        <div class="columns is-centered">
+          <div class="column">
+            <figure class="image">
+              <img src="../assets/interests.svg" alt="illustration alliance yoru trooper">
+            </figure>
+          </div>
+          <div class="column">
+            <h3>What I ❤️</h3>
+            <ul class="list-bullet">
+              <li><a href="https://pinterest.com/bedeviere/for-the-alliance/" target="_blank">For the Alliance!</a></li>
+              <li><a href="https://playvalorant.com/en-us/agents/yoru/" target="_blank">Kiritani Ryo</a></li>
+              <li><a href="https://pinterest.com/bedeviere/troopers/" target="_blank">Troopers</a></li>
+              <li><a href="http://instagram.com/bimatagunpla" target="_blank">My Gunpla Collection</a></li>
+              <li><a href="https://youtu.be/i0K40f-6mLs" target="_blank">Tatsuya Kitani - "Where Our Blue Is"</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
         <!-- <h4>Life in Photos</h4>
         <vue-instagram v-bind:token="token" v-bind:count="12" class="columns is-multiline is-mobile is-centered">
           <template slot="feeds" slot-scope="props">
@@ -109,19 +146,19 @@
             <div class="insta-alert"> {{ props.error.error_message }} </div>
           </template>
         </vue-instagram> -->
+        <h3>About this Website</h3>
         <div class="columns">
           <div class="column">
-            <h4>About this Website</h4>
             <p>This site has been designed and built using <a href="https://bulma.io/" target="_blank">Bulma CSS Framework</a> as the skeleton, with some customizations along the way. It's rendered and transitioned through <a href="https://vuejs.org/" target="_blank">Vue.JS</a>.</p>
             <p>The CSS is written in <a href="https://sass-lang.com/" target="_blank">Sass</a>, with <strong>mobile first approach</strong> and with <a href="https://type-scale.com/" target="_blank">Perfect Fourth scale</a> for a <a href="https://alistapart.com/article/more-meaningful-typography" target="_blank">more meaningful typography</a>.</p>
-            <p>The color scheme of this site is heavily inspired by the <a href="https://wow.gamepedia.com/Crest_of_the_Alliance" target="_blank">Alliance Crest</a>.</p>
+            <p>The color scheme of this site is heavily inspired by the <a href="https://warcraft.wiki.gg/wiki/Alliance" target="_blank">Alliance symbol</a>.</p>
           </div>
           <div class="column">
             <img class="image-centered" src="../assets/katakana.gif" alt="navy gold square">
           </div>
         </div>
         <div class="link-next">
-          <h3><router-link to="/work">Works&nbsp;<i class="fas fa-long-arrow-alt-right"></i></router-link></h3>
+          <h3><router-link to="/contact">Contact Me&nbsp;<i class="fas fa-long-arrow-alt-right"></i></router-link></h3>
         </div>
       </div>
     </section>
@@ -198,6 +235,14 @@ export default {
         color: $color-primary;
         box-shadow:  0 -1px 0 0 white inset, 0 -0.15em 0 0 $color-primary inset;
       }
+    }
+  }
+
+  .about-tools {
+    .button {
+      font-family: 'Lato', Helvetica, Arial, sans-serif;
+      font-weight: 400;
+      text-transform: none;
     }
   }
 </style>

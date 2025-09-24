@@ -75,7 +75,7 @@ export default {
   }
 
   ::selection {
-    background-color: $color-primary;
+    background-color: $color-secondary;
   }
 
   .wrapper {
@@ -210,6 +210,11 @@ export default {
       color: $color-default;
       opacity: .75;
     }
+    &.is-fill {
+      img {
+        object-fit: fill;
+      }
+    }
   }
 
   .button {
@@ -302,7 +307,7 @@ export default {
     &:focus {
       background-color: $color-default;
       border-color: $color-default;
-      color: $color-primary;
+      color: white;
     }
     &::before {
       border-color: transparent;
@@ -324,6 +329,24 @@ export default {
     }
   }
 
+  .btn-primary-o {
+    background-color: transparent;
+    color: $color-primary;
+    border-color: $color-primary;
+    &:hover,
+    &:focus {
+      background-color: $color-primary;
+      color: white;
+      border-color: $color-primary;
+      &::before {
+        border-color: $color-primary;
+      }
+    }
+    &::before {
+      border-color: transparent;
+    }
+  }
+
   .btn-secondary {
     background-color: $color-secondary;
     color: $color-default;
@@ -332,7 +355,7 @@ export default {
     &:focus {
       background-color: $color-primary;
       border-color: $color-primary;
-      color: $color-default;
+      color: white;
     }
     &::before {
       border-color: $color-secondary;
@@ -520,6 +543,19 @@ export default {
     }
   }
 
+  .section {
+    &.is-primary {
+      background-color: $color-primary;
+      color: white;
+      h1, h2, h3, h4, h5, h6 {
+        color: white;
+      }
+    }
+    &.is-shade {
+      background-color: $color-shade;
+    }
+  }
+
   footer {
     background-color: rgba(white, 0.85);
     width: 100%;
@@ -560,6 +596,12 @@ export default {
       height: 50px;
       line-height: 46px;
       font-size: 24px;
+    }
+
+    .columns {
+      &.is-reversed {
+        flex-direction: row-reverse;
+      }
     }
   }
 </style>
