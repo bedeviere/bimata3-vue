@@ -181,7 +181,7 @@ export default {
   .contact-email {
     .button {
       font-family: 'Lato', Helvetica, Arial, sans-serif;
-      font-weight: 400;
+      font-weight: 700;
       text-transform: none;
     }
   }

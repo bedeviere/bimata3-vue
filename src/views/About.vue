@@ -28,7 +28,7 @@
                 <h5>{{ overviewMoreCopy }}</h5>
               </div>
               <br>
-              <h4>Social</h4>
+              <h4>Socials</h4>
               <ul class="list-social">
                 <li><a class="button btn-icon btn-primary" href="http://dribbble.com/bedeviere" target="_blank"><i class="fab fa-fw fa-dribbble"></i></a></li>
                 <li><a class="button btn-icon btn-primary" href="http://linkedin.com/in/bedeviere" target="_blank"><i class="fab fa-fw fa-linkedin-in"></i></a></li>
@@ -50,7 +50,8 @@
           </div>
           <div class="column">
             <h3>UX/UI & Product Design</h3>
-            <p>I create digital experiences that are both intuitive and visually engaging. From research and user flows to polished interfaces, I design products that meet real user needs and business goals. My process includes wireframing, prototyping, and usability testing to validate ideas early. I build scalable design systems to keep products consistent and easy to maintain.</p>
+            <p>I create digital experiences that are both intuitive and visually engaging. From research and user flows to polished interfaces, I design products that meet real user needs and business goals.</p>
+            <p>My process includes wireframing, prototyping, and usability testing to validate ideas early. I build scalable design systems to keep products consistent and easy to maintain.</p>
             <div class="buttons about-tools">
               <a href="https://www.figma.com/design/" target="_blank" class="button btn-primary-o">
                 <i class="fab fa-figma"></i>&nbsp;Figma Design
@@ -79,7 +80,8 @@
           </div>
           <div class="column">
             <h3>Front-end & WordPress Development</h3>
-            <p>I develop fast, responsive websites with clean, maintainable front-end code. From custom WordPress themes to tailored functionality, I create solutions that fit your brand and business needs. My builds prioritize performance, accessibility, and seamless user experience across all devices. I integrate flexible content management, making updates simple and efficient.</p>
+            <p>I develop fast, responsive websites with clean, maintainable front-end code. From custom WordPress themes to tailored functionality, I create solutions that fit your brand and business needs.</p>
+            <p>My builds prioritize performance, accessibility, and seamless user experience across all devices. I integrate flexible content management, making updates simple and efficient.</p>
             <div class="buttons about-tools">
               <a href="https://en.wikipedia.org/wiki/HTML5" target="_blank" class="button btn-primary-o">
                 HTML&nbsp;<i class="fab fa-html5"></i>
@@ -239,9 +241,10 @@ export default {
   }
 
   .about-tools {
+    margin-top: 1rem;
     .button {
       font-family: 'Lato', Helvetica, Arial, sans-serif;
-      font-weight: 400;
+      font-weight: 700;
       text-transform: none;
     }
   }
