@@ -15,7 +15,7 @@
           </div>
           <div class="home-summary columns">
             <div class="column is-two-thirds">
-              <p>I create <strong>design prototypes</strong> and conduct <strong>user research</strong>. I’m a designer with a previous <strong>front-end developer</strong> background. I am constantly curious with how people <strong>understand</strong> and <strong>use things</strong>.</p>
+              With <strong>9 years</strong> of experiences within startups of various industries as both designer and developer, I craft intuitive designs that <strong>connect with users</strong> and <strong>support business goals</strong>. Fundamentally, I am constantly curious about how people perceive and interact with products and things.</p>
             </div>
           </div>
           <div class="buttons">
