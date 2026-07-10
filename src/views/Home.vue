@@ -15,7 +15,9 @@
           </div>
           <div class="home-summary columns">
             <div class="column is-two-thirds">
-              With <strong>9 years</strong> of experiences within startups of various industries as both designer and developer, I craft intuitive designs that <strong>connect with users</strong> and <strong>support business goals</strong>. Fundamentally, I am constantly curious about how people perceive and interact with products and things.</p>
+              <p>
+                UX/UI Product Designer with <strong>9+ years</strong> between <strong>UX design</strong> and <strong>front-end engineering</strong>, with experience in designing SaaS, fintech, education, and enterprise products. I specialize in translating complex business requirements into intuitive digital products, leveraging design systems, user research, and close collaboration with engineering teams.
+              </p>
             </div>
           </div>
           <div class="buttons">
